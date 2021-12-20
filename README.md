@@ -1,3 +1,2 @@
 # Minimum-Partition-into-Plane-Subgraphs
-test2
-test3
+Auj, besoin seulement de compiler avec make
