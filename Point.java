@@ -13,6 +13,11 @@ class Point{
 	
 	@Override
 	public String toString(){
-		return "(" + Double.toString(x) + " , " + Double.toString(y) + ")";
+		return "(" + Double.toString(x) + "," + Double.toString(y) + ")";
+	}
+
+	@Override
+	public int hashCode(){
+		return Double.hashCode(x*y + x + y);
 	}
 }
