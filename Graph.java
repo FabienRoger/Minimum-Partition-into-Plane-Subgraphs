@@ -5,7 +5,7 @@ import java.util.Map;
 class Graph{
 	
 	int size = 0;
-	HashMap<Point, ArrayList<Point>> graph; //lookup table pour convertir un point en un entier qui lui est attribué
+	HashMap<Point, ArrayList<Point>> graph;
 	
 
 	Graph(){
