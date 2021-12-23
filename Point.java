@@ -1,23 +1,22 @@
-class Point{
-	double x,y;
+class Point {
+	int x, y;
 
-	Point(){
-		x = 0;
-		y = 0;
-	}
-	
-	Point(double px, double py){
+	Point(int px, int py) {
 		x = px;
 		y = py;
 	}
-	
+
 	@Override
-	public String toString(){
+	public String toString() {
 		return "(" + Double.toString(x) + "," + Double.toString(y) + ")";
 	}
 
 	@Override
-	public int hashCode(){
-		return Double.hashCode(x*y + x + y);
+	public int hashCode() {
+		return Double.hashCode(x * y + x + y);
+	}
+
+	boolean equal(Point o) {
+		return this.x == o.x && this.y == o.y;
 	}
 }
