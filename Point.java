@@ -13,7 +13,7 @@ class Point {
 
 	@Override
 	public int hashCode() {
-		return Double.hashCode(x * y + x + y);
+		return x * y + x + y;
 	}
 
 	boolean equal(Point o) {
