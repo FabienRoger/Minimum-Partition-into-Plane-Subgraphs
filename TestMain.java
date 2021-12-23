@@ -5,7 +5,7 @@ public class TestMain {
         Point p3 = new Point(-1, -2);
         Point p4 = new Point(25, 26);
 
-        Graph g = new HashGraphWithInfo();
+        HashGraphWithInfo g = new HashGraphWithInfo();
 
         g.add_arete(p1, p2);
         g.add_arete(p1, p3);
@@ -17,12 +17,10 @@ public class TestMain {
         System.out.println("\n");
         System.out.println(g);
 
-        GraphSolution solution = new GraphSolution();
-        solution.colorEdge(p3, p4, 1);
+        GraphSolution solution = new GraphSolution(g); // By default, color everything to 1
         solution.colorEdge(p1, p2, 2);
-        solution.colorEdge(p1, p3, 1);
-        solution.colorEdge(p1, p4, 1);
-
+        System.out.println(CheckSolution.check(solution));
+        solution.colorEdge(p1, p2, 1);
         System.out.println(CheckSolution.check(solution));
     }
 }

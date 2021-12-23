@@ -11,6 +11,19 @@ public class Edge {
         return a.hashCode() % 10000 + b.hashCode() * 10000;
     }
 
+    @Override
+    public String toString() {
+        return a.toString() + "-" + b.toString();
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (o instanceof Edge) {
+            return this.equal((Edge) o);
+        }
+        return false;
+    }
+
     boolean equal(Edge o) {
         return this.a.equal(o.a) && this.b.equal(o.b);
     }
