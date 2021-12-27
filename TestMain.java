@@ -5,7 +5,7 @@ public class TestMain {
         Point p3 = new Point(-1, -2);
         Point p4 = new Point(25, 26);
 
-        HashGraphWithInfo g = new HashGraphWithInfo();
+        HashGraphWithInfo g = new HashGraphWithInfo("0");
 
         g.add_arete(p1, p2);
         g.add_arete(p1, p3);

@@ -1,4 +1,4 @@
-JFLAGS = -g
+JFLAGS = -g -cp .:core3.jar
 JC = javac
 .SUFFIXES: .java .class
 .java.class:
@@ -9,8 +9,15 @@ JC = javac
 # If your version of make can't handle the leading tabs on each
 # line, just remove them (these are also just added for readability).
 CLASSES = \
-        Point.java \
-		Graph.java
+	Point.java \
+	Graph.java \
+	HashGraph.java \
+	Edge.java \
+	HashGraphWithInfo.java \
+	GraphSolution.java \
+	IO.java	\
+	TC.java \
+	GraphViewer.java
 
 default: classes
 

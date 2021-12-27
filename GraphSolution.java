@@ -3,13 +3,17 @@ import java.util.HashMap;
 public class GraphSolution {
     int nbColors = 0;
     // Colors should be >= 1
+	// edgeColors should be an array for output
     HashMap<Edge, Integer> edgeColors = new HashMap<>();
+
+	String id;
 
     GraphSolution() {
 
     }
 
     GraphSolution(HashGraphWithInfo graph) {
+		id = graph.id;
         for (Edge edge : graph.edges) {
             colorEdge(edge, 1);
         }

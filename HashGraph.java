@@ -5,14 +5,26 @@ import java.util.Map;
 class HashGraph extends Graph {
 
 	int size = 0;
+	String id;
+	ArrayList<Point> vertices = new ArrayList<Point>();
 	HashMap<Point, ArrayList<Point>> graph = new HashMap<Point, ArrayList<Point>>();
-
+	
+	/*
 	void update_vertices(Point a) {
 		// ajoute un point au graphe s'il n'existe pas déjà
 		if (!graph.containsKey(a)) {
 			graph.put(a, new ArrayList<Point>());
 			size++;
 		}
+	}
+	*/
+
+	//version rapide utilisée par le JSON
+	void update_vertices(Point a){
+		//on sait que les points ne sont pas créés
+		vertices.add(a);
+		graph.put(a, new ArrayList<Point>());
+		size++;
 	}
 
 	@Override
@@ -24,7 +36,13 @@ class HashGraph extends Graph {
 		graph.get(a).add(b);
 		graph.get(b).add(a);
 	}
-
+	
+	//version rapide utilisée par le JSON
+	void add_arete(int i, int j){
+		graph.get(vertices.get(i)).add(vertices.get(j));
+		graph.get(vertices.get(j)).add(vertices.get(i));
+	}
+	
 	@Override
 	public String toString() {
 		String str = "";
