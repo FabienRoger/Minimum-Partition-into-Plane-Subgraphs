@@ -307,8 +307,15 @@ public class GraphViewer extends PApplet {
 
 
 		double ratio=(GraphViewer.ymax-GraphViewer.ymin)/((double)(GraphViewer.xmax-GraphViewer.xmin));
-		GraphViewer.sizeX=500; // width of the frame
-		GraphViewer.sizeY=(int)(GraphViewer.sizeX*ratio); // height of the frame
+		if(ratio > 1){
+			GraphViewer.sizeY=900; // width of the frame
+			GraphViewer.sizeX=(int)(GraphViewer.sizeY/ratio); // height of the frame
+		}
+		else{
+			GraphViewer.sizeX=900; // width of the frame
+			GraphViewer.sizeY=(int)(GraphViewer.sizeX*ratio); // height of the frame
+		}
+
 		GraphViewer.graph=graph;
 
 
