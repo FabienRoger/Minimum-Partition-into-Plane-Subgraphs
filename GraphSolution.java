@@ -1,19 +1,21 @@
-import java.util.HashMap;
 
 public class GraphSolution {
     int nbColors = 0;
     // Colors should be >= 1
-	// edgeColors should be an array for output
-    HashMap<Edge, Integer> edgeColors = new HashMap<>();
 
-	String id;
+    int[] edgeColorsList;
+    HashGraphWithInfo graph;
 
-    GraphSolution() {
-
-    }
+    String id;
 
     GraphSolution(HashGraphWithInfo graph) {
-		id = graph.id;
+        id = graph.id;
+        this.graph = graph;
+
+        edgeColorsList = new int[graph.edges.size()];
+        for (int i = 0; i < edgeColorsList.length; i++) {
+            edgeColorsList[i] = 1;
+        }
         for (Edge edge : graph.edges) {
             colorEdge(edge, 1);
         }
@@ -24,10 +26,11 @@ public class GraphSolution {
     }
 
     void colorEdge(Edge e, int color) {
-        nbColors = Math.max(color, nbColors);
-        if (edgeColors.containsKey(e)) {
+        colorEdge(this.graph.edgeHashMap.get(e), color);
+    }
 
-        }
-        edgeColors.put(e, color);
+    void colorEdge(int i, int color) {
+        nbColors = Math.max(color, nbColors);
+        edgeColorsList[i] = color;
     }
 }
