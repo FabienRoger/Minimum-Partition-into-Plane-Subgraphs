@@ -103,7 +103,7 @@ public class IO {
 
 		System.out.print("\tChecking colors...");
 		int[] colors = colors_field.getIntArray();
-		if (colors == null || colors.length != instance.nbColors)
+		if (colors == null || colors.length != instance.graph.edges.size())
 			throw new Error("Error: wrong number of colors");
 
 		for (int c : colors)

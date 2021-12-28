@@ -103,8 +103,8 @@ public class GraphViewer extends PApplet {
 
 		if (this.exportJson.mouseIsOver()) {
 			System.out.println("Export layout to Json output file");
-			IO.saveSolutionToJSON(this.solution, "output.json"); // export the solution in JSON format
-			IO.checkOutputFile("output.json", this.solution); // check output format of the solution
+			IO.saveSolutionToJSON(this.solution, "outputs/output.json"); // export the solution in JSON format
+			IO.checkOutputFile("outputs/output.json", this.solution); // check output format of the solution
 		} else {
 		}
 
@@ -245,8 +245,8 @@ public class GraphViewer extends PApplet {
 	 * Draw a black segment (x1, y1) - (x2, y2) on the grid
 	 */
 	public void drawSegment(int x1, int y1, int x2, int y2) {
-		this.stroke(50);
-		this.fill(200, 200, 200);
+		// this.stroke(50);
+		// this.fill(200, 200, 200);
 		int[] pos1 = this.getPixel(x1, y1);
 		int[] pos2 = this.getPixel(x2, y2);
 		this.line(pos1[0], pos1[1], pos2[0], pos2[1]);
@@ -259,13 +259,19 @@ public class GraphViewer extends PApplet {
 		if (graph == null)
 			return;
 
+		this.colorMode(HSB);
+
 		// draw the edges
-		for (Edge edge : graph.edges) { // iterate over all nodes
+		for (int i = 0; i < graph.edges.size(); i++) {
+			Edge edge = graph.edges.get(i);
 			Point pU = edge.a;
 			Point pV = edge.b;
+			this.stroke(solution.edgeColors[i] * 255 / solution.nbColors, 255, 255);
 			this.drawSegment(pU.x, pU.y, pV.x, pV.y);
 
 		}
+
+		this.colorMode(RGB);
 
 		// draw the vertices
 		for (Point sommet : graph.vertices) {
@@ -291,9 +297,22 @@ public class GraphViewer extends PApplet {
 
 		if (inputFile.endsWith(".json") == true) {
 			graph = IO.loadInput(inputFile); // read the input Json file
-			System.out.println(graph);
+			// System.out.println(graph);
 
 			solution = new GraphSolution(graph);
+
+			Optimizer opti = new SimpleOptimizer();
+			long startTime = System.currentTimeMillis();
+			solution = opti.solve(solution);
+			System.out.println("Solution computed in " + (System.currentTimeMillis() - startTime) + "ms");
+			// solution.colorEdge(2, 1);
+			// solution.colorEdge(3, 2);
+			if (CheckSolution.check(solution)) {
+				System.out.println("The solution found is correct");
+			} else {
+				System.out.println("The solution found is not correct");
+			}
+
 			// instance.print(); // only for small instances (for checking the IO class)
 		} else {
 			System.out.println("Error: wrong input format");

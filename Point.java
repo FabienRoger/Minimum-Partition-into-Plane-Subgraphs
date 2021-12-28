@@ -8,7 +8,7 @@ class Point {
 
 	@Override
 	public String toString() {
-		return "(" + Double.toString(x) + "," + Double.toString(y) + ")";
+		return "(" + x + "," + y + ")";
 	}
 
 	@Override
