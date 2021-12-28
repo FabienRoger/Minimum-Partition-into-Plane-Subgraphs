@@ -12,6 +12,7 @@ public class GraphViewer extends PApplet {
 	// public static Instance instance;
 
 	public static HashGraphWithInfo graph;
+	public static GraphSolution solution;
 
 	public static int xmin = Integer.MAX_VALUE, xmax = Integer.MIN_VALUE, ymin = Integer.MAX_VALUE,
 			ymax = Integer.MIN_VALUE;
@@ -100,19 +101,13 @@ public class GraphViewer extends PApplet {
 		this.currentMousePosition = new int[] { mouseX, mouseY };
 		this.oldMousePosition = new int[] { mouseX, mouseY };
 
-		/*
-		 * TODO : This if/else is not implemented yet
-		 * 
-		 * if (this.exportJson.mouseIsOver()) {
-		 * System.out.println("Export layout to Json output file");
-		 * IO.saveSolutionToJSON(this.solution, "output.json"); // export the solution
-		 * in JSON format
-		 * IO.checkOutputFile("output.json", this.instance); // check output format of
-		 * the solution
-		 * }
-		 * else {
-		 * }
-		 */
+		if (this.exportJson.mouseIsOver()) {
+			System.out.println("Export layout to Json output file");
+			IO.saveSolutionToJSON(this.solution, "output.json"); // export the solution in JSON format
+			IO.checkOutputFile("output.json", this.solution); // check output format of the solution
+		} else {
+		}
+
 	}
 
 	/**
@@ -297,6 +292,8 @@ public class GraphViewer extends PApplet {
 		if (inputFile.endsWith(".json") == true) {
 			graph = IO.loadInput(inputFile); // read the input Json file
 			System.out.println(graph);
+
+			solution = new GraphSolution(graph);
 			// instance.print(); // only for small instances (for checking the IO class)
 		} else {
 			System.out.println("Error: wrong input format");

@@ -1,9 +1,9 @@
 
 public class GraphSolution {
     int nbColors = 0;
-    // Colors should be >= 1
+    // Colors should be >= 0
 
-    int[] edgeColorsList;
+    int[] edgeColors;
     HashGraphWithInfo graph;
 
     String id;
@@ -12,12 +12,9 @@ public class GraphSolution {
         id = graph.id;
         this.graph = graph;
 
-        edgeColorsList = new int[graph.edges.size()];
-        for (int i = 0; i < edgeColorsList.length; i++) {
-            edgeColorsList[i] = 1;
-        }
+        edgeColors = new int[graph.edges.size()];
         for (Edge edge : graph.edges) {
-            colorEdge(edge, 1);
+            colorEdge(edge, 0);
         }
     }
 
@@ -30,7 +27,7 @@ public class GraphSolution {
     }
 
     void colorEdge(int i, int color) {
-        nbColors = Math.max(color, nbColors);
-        edgeColorsList[i] = color;
+        nbColors = Math.max(color + 1, nbColors);
+        edgeColors[i] = color;
     }
 }

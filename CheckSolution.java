@@ -8,8 +8,8 @@ public class CheckSolution {
             for (int j = 0; j < i; j++) {
                 Edge a = solution.graph.edges.get(i);
                 Edge b = solution.graph.edges.get(j);
-                int ca = solution.edgeColorsList[i];
-                int cb = solution.edgeColorsList[j];
+                int ca = solution.edgeColors[i];
+                int cb = solution.edgeColors[j];
                 if (!a.equal(b) && a.intersect(b)) {
                     if (ca == cb) {
                         return false;
