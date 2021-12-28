@@ -20,7 +20,7 @@ public class SimpleOptimizer extends Optimizer {
             for (int j = 0; j < i; j++) {
                 if (edges.get(i).intersect(edges.get(j))) {
                     intersections.get(i).add(j);
-                    intersections.get(j).add(i);
+                    // intersections.get(j).add(i);
                 }
             }
         }
