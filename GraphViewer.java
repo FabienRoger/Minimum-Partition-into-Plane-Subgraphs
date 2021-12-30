@@ -302,7 +302,7 @@ public class GraphViewer extends PApplet {
 
 			solution = new GraphSolution(graph);
 
-			Optimizer opti = new SimpleOptimizer();
+			Optimizer opti = new GreedyOptimizer();
 			long startTime = System.currentTimeMillis();
 			opti.solve(solution);
 			System.out.println("Solution computed in " + (System.currentTimeMillis() - startTime) + "ms");

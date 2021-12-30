@@ -8,7 +8,7 @@ public class GenerateAllOuputs {
     private static int generateSolution(String inputFile) {
         HashGraphWithInfo graph = IO.loadInput(inputFile);
         GraphSolution solution = new GraphSolution(graph);
-        Optimizer optimizer = new SimpleOptimizer();
+        Optimizer optimizer = new GreedyOptimizer();
         optimizer.solve(solution);
 
         if (!CheckSolution.check(solution)) {
