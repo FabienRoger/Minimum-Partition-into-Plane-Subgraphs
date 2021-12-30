@@ -103,8 +103,9 @@ public class GraphViewer extends PApplet {
 
 		if (this.exportJson.mouseIsOver()) {
 			System.out.println("Export layout to Json output file");
-			IO.saveSolutionToJSON(this.solution, "outputs/output.json"); // export the solution in JSON format
-			IO.checkOutputFile("outputs/output.json", this.solution); // check output format of the solution
+			String filename = "outputs/output" + graph.id + ".json";
+			IO.saveSolutionToJSON(this.solution, filename); // export the solution in JSON format
+			IO.checkOutputFile(filename, this.solution); // check output format of the solution
 		} else {
 		}
 
@@ -303,7 +304,7 @@ public class GraphViewer extends PApplet {
 
 			Optimizer opti = new SimpleOptimizer();
 			long startTime = System.currentTimeMillis();
-			solution = opti.solve(solution);
+			opti.solve(solution);
 			System.out.println("Solution computed in " + (System.currentTimeMillis() - startTime) + "ms");
 			// solution.colorEdge(2, 1);
 			// solution.colorEdge(3, 2);

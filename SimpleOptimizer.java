@@ -6,7 +6,7 @@ public class SimpleOptimizer extends Optimizer {
     int nEdges;
     ArrayList<ArrayList<Integer>> intersections;
 
-    public GraphSolution solve(GraphSolution wrongSolution) {
+    public void solve(GraphSolution wrongSolution) {
         edges = wrongSolution.graph.edges;
         solution = wrongSolution;
         nEdges = wrongSolution.graph.edges.size();
@@ -27,8 +27,6 @@ public class SimpleOptimizer extends Optimizer {
         for (int i = 0; i < nEdges; i++) {
             solution.colorEdge(i, colorsMex(i));
         }
-
-        return solution;
     }
 
     // private int findBadEdge() {

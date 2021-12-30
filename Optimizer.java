@@ -1,4 +1,4 @@
 public abstract class Optimizer {
 
-    public abstract GraphSolution solve(GraphSolution wrongSolution);
+    public abstract void solve(GraphSolution wrongSolution);
 }
