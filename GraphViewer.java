@@ -281,7 +281,7 @@ public class GraphViewer extends PApplet {
 	}
 
 	public static void main(String[] args) {
-		System.out.println("Visual tools for the \"CG:SHOP 2022 Competition\"");
+		// System.out.println("Visual tools for the \"CG:SHOP 2022 Competition\"");
 		if (args.length < 1) {
 			System.out.println("Error: one argument required: input file in JSON format");
 			System.exit(0);
@@ -302,10 +302,11 @@ public class GraphViewer extends PApplet {
 
 			solution = new GraphSolution(graph);
 
-			Optimizer opti = new GreedyOptimizer();
+			Optimizer opti = new DsaturOptimizer();
 			long startTime = System.currentTimeMillis();
 			opti.solve(solution);
-			System.out.println("Solution computed in " + (System.currentTimeMillis() - startTime) + "ms");
+			System.out.println("Solution with " + solution.nbColors + " colors computed in "
+					+ (System.currentTimeMillis() - startTime) + "ms");
 			// solution.colorEdge(2, 1);
 			// solution.colorEdge(3, 2);
 			if (CheckSolution.check(solution)) {
@@ -330,7 +331,7 @@ public class GraphViewer extends PApplet {
 			GraphViewer.ymax = max(GraphViewer.ymax, sommet.y);
 		}
 
-		System.out.println(xmin + " " + xmax + " " + ymin + " " + ymax);
+		// System.out.println(xmin + " " + xmax + " " + ymin + " " + ymax);
 
 		double ratio = (GraphViewer.ymax - GraphViewer.ymin) / ((double) (GraphViewer.xmax - GraphViewer.xmin));
 		if (ratio > 1) {
