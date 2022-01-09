@@ -1,0 +1,12 @@
+Solution for reecn3382.instance.json generated with 100 colors in 781ms2.0 4.0
+Solution for rsqrp4641.instance.json generated with 102 colors in 1773ms2.0 4.0
+Solution for rvisp5013.instance.json generated with 71 colors in 918ms2.0 4.0
+Solution for rvispecn2615.instance.json generated with 49 colors in 244ms2.0 4.0
+Solution for small.json generated with 3 colors in 4ms2.0 4.0
+Solution for sqrp7730.instance.json generated with 136 colors in 5812ms2.0 4.0
+Solution for sqrpecn30017.instance.json generated with 484 colors in 215635ms2.0 4.0
+Solution for sqrpecn3020.instance.json generated with 149 colors in 1085ms2.0 4.0
+Solution for test.json generated with 2 colors in 4ms2.0 4.0
+Solution for visp26405.instance.json generated with 113 colors in 28640ms2.0 4.0
+Solution for vispecn2518.instance.json generated with 78 colors in 314ms2.0 4.0
+Solution for vispecn26025.instance.json generated with 324 colors in 53632ms2.0 4.0
