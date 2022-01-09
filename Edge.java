@@ -33,7 +33,7 @@ public class Edge {
     }
 
     static private int orientation(Point p, Point q, Point r) {
-        int val = (q.y - p.y) * (r.x - q.x) - (q.x - p.x) * (r.y - q.y);
+        long val = (q.y - p.y) * (long) (r.x - q.x) - (q.x - p.x) * (long) (r.y - q.y);
 
         if (val == 0) {
             return 0;

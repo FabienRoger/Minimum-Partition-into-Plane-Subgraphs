@@ -5,6 +5,8 @@ import java.util.ArrayList;
 
 public class GenerateAllOuputs {
 
+    static String prefix = "";
+
     private static int generateSolution(String inputFile) {
         HashGraphWithInfo graph = IO.loadInput(inputFile);
         GraphSolution solution = new GraphSolution(graph);
@@ -16,7 +18,7 @@ public class GenerateAllOuputs {
             return -1;
         }
 
-        String filename = "outputs/output" + graph.id + ".json";
+        String filename = prefix + "outputs/output" + graph.id + ".json";
         IO.saveSolutionToJSON(solution, filename); // export the solution in JSON format
         IO.checkOutputFile(filename, solution); // check output format of the solution
 
@@ -24,7 +26,7 @@ public class GenerateAllOuputs {
     }
 
     public static void main(String[] args) {
-        File folder = new File("instances");
+        File folder = new File(prefix + "instances");
         File[] listOfFiles = folder.listFiles();
 
         ArrayList<String> results = new ArrayList<>();
@@ -32,7 +34,10 @@ public class GenerateAllOuputs {
             if (!file.isFile()) {
                 continue;
             }
-            String inputFile = "instances/" + file.getName();
+            // if (file.getName().startsWith("reecn")) {
+            //     continue;
+            // }
+            String inputFile = prefix + "instances/" + file.getName();
 
             long start = System.currentTimeMillis();
             int colors = generateSolution(inputFile);
