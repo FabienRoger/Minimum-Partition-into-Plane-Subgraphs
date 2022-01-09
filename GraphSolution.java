@@ -19,7 +19,7 @@ public class GraphSolution {
     }
 
     void colorEdge(Point a, Point b, int color) {
-        this.colorEdge(new Edge(a, b), color);
+		this.colorEdge(new Edge(a, b), color);
     }
 
     void colorEdge(Edge e, int color) {
@@ -30,4 +30,12 @@ public class GraphSolution {
         nbColors = Math.max(color + 1, nbColors);
         edgeColors[i] = color;
     }
+
+	int color(Edge e){
+		return color(this.graph.edgeHashMap.get(e));
+	}
+
+	int color(int i){
+		return edgeColors[i];	
+	}
 }

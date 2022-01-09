@@ -302,7 +302,7 @@ public class GraphViewer extends PApplet {
 
 			solution = new GraphSolution(graph);
 
-			Optimizer opti = new DsaturOptimizer();
+			Optimizer opti = new MarkovOptimizer();
 			long startTime = System.currentTimeMillis();
 			opti.solve(solution);
 			System.out.println("Solution with " + solution.nbColors + " colors computed in "

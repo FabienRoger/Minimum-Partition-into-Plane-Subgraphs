@@ -8,5 +8,4 @@ public class EdgeWithInfo extends Edge {
         this.id = id;
         this.score = 0;
     }
-
 }
