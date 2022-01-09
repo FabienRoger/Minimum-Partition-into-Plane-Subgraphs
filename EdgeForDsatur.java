@@ -9,6 +9,7 @@ public class EdgeForDsatur extends Edge {
     int nbColorNeighbours = 0;
     boolean colored = false;
     int color = -1;
+    double score = 0;
 
     EdgeForDsatur(Point a, Point b, int id) {
         super(a, b);
