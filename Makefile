@@ -15,9 +15,13 @@ CLASSES = \
 	Edge.java \
 	HashGraphWithInfo.java \
 	GraphSolution.java \
+	Optimizer.java \
+	EdgeForDsatur.java \
+	DsaturOptimizer.java \
 	IO.java	\
 	TC.java \
-	GraphViewer.java
+	GraphViewer.java \
+	GenerateAllOuputs.java
 
 default: classes
 

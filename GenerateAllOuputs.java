@@ -5,12 +5,14 @@ import java.util.ArrayList;
 
 public class GenerateAllOuputs {
 
-    static String prefix = "";
+    static String inputPrefix = "all";
+    static String outputPrefix = "allDsatur2";
+    static String startWithPrefix = "visp";
 
     private static int generateSolution(String inputFile) {
         HashGraphWithInfo graph = IO.loadInput(inputFile);
         GraphSolution solution = new GraphSolution(graph);
-        Optimizer optimizer = new DsaturOptimizer();
+        Optimizer optimizer = new SimpleOptimizer();
         optimizer.solve(solution);
 
         if (!CheckSolution.check(solution)) {
@@ -18,7 +20,7 @@ public class GenerateAllOuputs {
             return -1;
         }
 
-        String filename = prefix + "outputs/output" + graph.id + ".json";
+        String filename = outputPrefix + "outputs/output" + graph.id + ".json";
         IO.saveSolutionToJSON(solution, filename); // export the solution in JSON format
         IO.checkOutputFile(filename, solution); // check output format of the solution
 
@@ -26,24 +28,29 @@ public class GenerateAllOuputs {
     }
 
     public static void main(String[] args) {
-        File folder = new File(prefix + "instances");
+        File folder = new File(inputPrefix + "instances");
         File[] listOfFiles = folder.listFiles();
 
         ArrayList<String> results = new ArrayList<>();
         for (File file : listOfFiles) {
-            if (!file.isFile()) {
-                continue;
-            }
-            // if (file.getName().startsWith("reecn")) {
-            //     continue;
-            // }
-            String inputFile = prefix + "instances/" + file.getName();
+            try {
+                if (!file.isFile()) {
+                    continue;
+                }
+                if (!file.getName().startsWith(startWithPrefix)) {
+                    continue;
+                }
+                String inputFile = inputPrefix + "instances/" + file.getName();
 
-            long start = System.currentTimeMillis();
-            int colors = generateSolution(inputFile);
-            results.add("Solution for " + file.getName()
-                    + " generated with " + colors + " colors"
-                    + " in " + (System.currentTimeMillis() - start) + "ms");
+                long start = System.currentTimeMillis();
+                int colors = generateSolution(inputFile);
+                results.add("Solution for " + file.getName()
+                        + " generated with " + colors + " colors"
+                        + " in " + (System.currentTimeMillis() - start) + "ms");
+            } catch (Exception e) {
+                System.out.println("An error occurred.");
+                e.printStackTrace();
+            }
         }
         String result = "";
         for (String s : results) {
@@ -51,10 +58,10 @@ public class GenerateAllOuputs {
             result += s + "\n";
         }
 
-        File summaryFile = new File("outputs/summary.txt");
+        File summaryFile = new File(outputPrefix + "outputs/summary.txt");
         try {
             summaryFile.createNewFile();
-            FileWriter summaryFileWriter = new FileWriter("outputs/summary.txt");
+            FileWriter summaryFileWriter = new FileWriter(outputPrefix + "outputs/summary.txt");
             summaryFileWriter.write(result);
             summaryFileWriter.close();
         } catch (IOException e) {
