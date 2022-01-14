@@ -1,12 +1,12 @@
 import processing.core.PApplet;
 
 /**
- * Main program that takes as input a JSON file storing the input instance
- * 
- * @author Luca Castelli Aleardi (Ecole Polytechnique, dec 2021)
- *
- *         Modified
- */
+* Main program that takes as input a JSON file storing the input instance
+*
+* @author Luca Castelli Aleardi (Ecole Polytechnique, dec 2021)
+*
+*         Modified
+*/
 public class GraphViewer extends PApplet {
 	/** An instance of the input problem */
 	// public static Instance instance;
@@ -67,8 +67,8 @@ public class GraphViewer extends PApplet {
 	}
 
 	/**
-	 * Deal with keyboard events
-	 */
+	* Deal with keyboard events
+	*/
 	public void keyPressed() {
 
 		switch (key) {
@@ -85,18 +85,18 @@ public class GraphViewer extends PApplet {
 	}
 
 	/**
-	 * Deal with keyboard events
-	 */
+	* Deal with keyboard events
+	*/
 	public void keyReleased() {
 		/*
-		 * switch(key) {
-		 * }
-		 */
+		* switch(key) {
+		* }
+		*/
 	}
 
 	/**
-	 * Deal with mouse interaction
-	 */
+	* Deal with mouse interaction
+	*/
 	public void mousePressed() {
 		this.currentMousePosition = new int[] { mouseX, mouseY };
 		this.oldMousePosition = new int[] { mouseX, mouseY };
@@ -112,8 +112,8 @@ public class GraphViewer extends PApplet {
 	}
 
 	/**
-	 * Deal with mouse interaction
-	 */
+	* Deal with mouse interaction
+	*/
 	public void mouseReleased() {
 		if (mouseButton == RIGHT) { // translate the window
 			int deltaX = (mouseX - currentMousePosition[0]) / 2;
@@ -124,28 +124,28 @@ public class GraphViewer extends PApplet {
 			this.currentMousePosition = new int[] { mouseX, mouseY };
 		} else if (mouseButton == LEFT) {
 			/*
-			 * System.out.println("Region selection (mouse released): ");
-			 * this.currentMousePosition=new int[] {mouseX, mouseY};
-			 * int[] p=this.getGridCellFromMouseLocation(this.oldMousePosition[0],
-			 * this.oldMousePosition[1]);
-			 * int[] q=this.getGridCellFromMouseLocation(mouseX, mouseY);
-			 * if(this.oldMousePosition!=null && this.currentMousePosition!=null) {
-			 * System.out.println("\t first window corner ["+this.oldMousePosition[0]+", "
-			 * +this.oldMousePosition[1]+"]"+" - ["+p[0]+","+p[1]+"]");
-			 * System.out.println("\t second window corner ["+this.currentMousePosition[0]
-			 * +", "+this.currentMousePosition[1]+"]");
-			 * }
-			 * System.out.println("\t mouse coordinates ["+mouseX+", "+mouseY+"]");
-			 * 
-			 * this.oldMousePosition=null;
-			 * this.mouseIsDragged=false;
-			 */
+			* System.out.println("Region selection (mouse released): ");
+			* this.currentMousePosition=new int[] {mouseX, mouseY};
+			* int[] p=this.getGridCellFromMouseLocation(this.oldMousePosition[0],
+			* this.oldMousePosition[1]);
+			* int[] q=this.getGridCellFromMouseLocation(mouseX, mouseY);
+			* if(this.oldMousePosition!=null && this.currentMousePosition!=null) {
+			* System.out.println("\t first window corner ["+this.oldMousePosition[0]+", "
+			* +this.oldMousePosition[1]+"]"+" - ["+p[0]+","+p[1]+"]");
+			* System.out.println("\t second window corner ["+this.currentMousePosition[0]
+			* +", "+this.currentMousePosition[1]+"]");
+			* }
+			* System.out.println("\t mouse coordinates ["+mouseX+", "+mouseY+"]");
+			*
+			* this.oldMousePosition=null;
+			* this.mouseIsDragged=false;
+			*/
 		}
 	}
 
 	/**
-	 * Deal with mouse interaction
-	 */
+	* Deal with mouse interaction
+	*/
 	public void mouseDragged() {
 		if (mouseButton == LEFT && this.mouseIsDragged == false) {
 			System.out.print("Mouse dragged: ");
@@ -162,9 +162,9 @@ public class GraphViewer extends PApplet {
 	}
 
 	/**
-	 * Given a cell (x, y) on a regular integer grid whose cells have a given
-	 * 'cellSize', returns the corresponding pixel on the screen
-	 */
+	* Given a cell (x, y) on a regular integer grid whose cells have a given
+	* 'cellSize', returns the corresponding pixel on the screen
+	*/
 	public int[] getPixel(double x, double y) {
 		double f = 0.9;
 		int vShift = 30;
@@ -181,8 +181,8 @@ public class GraphViewer extends PApplet {
 	}
 
 	/**
-	 * Main function for drawing the graph
-	 */
+	* Main function for drawing the graph
+	*/
 	public void draw() {
 		this.background(255); // set the color of background (clean the background)
 
@@ -194,8 +194,8 @@ public class GraphViewer extends PApplet {
 	}
 
 	/**
-	 * Show user options on the screen
-	 */
+	* Show user options on the screen
+	*/
 	public void drawOptions() {
 		String label = GraphViewer.userOptionsAll;
 		int posX = 0;
@@ -211,8 +211,8 @@ public class GraphViewer extends PApplet {
 	}
 
 	/**
-	 * Draw an integer label in a square
-	 */
+	* Draw an integer label in a square
+	*/
 	public void drawLabel(String label, int x, int y) {
 		int delta = 1;
 		if (label.length() > 2)
@@ -223,8 +223,8 @@ public class GraphViewer extends PApplet {
 	}
 
 	/**
-	 * Draw a black point
-	 */
+	* Draw a black point
+	*/
 	public void drawBlackPoint(int x, int y) {
 		this.stroke(0);
 		this.fill(0);
@@ -233,8 +233,8 @@ public class GraphViewer extends PApplet {
 	}
 
 	/**
-	 * Draw a black point
-	 */
+	* Draw a black point
+	*/
 	public void drawWhitePoint(int x, int y) {
 		this.stroke(0);
 		this.fill(255, 255, 255);
@@ -243,8 +243,8 @@ public class GraphViewer extends PApplet {
 	}
 
 	/**
-	 * Draw a black segment (x1, y1) - (x2, y2) on the grid
-	 */
+	* Draw a black segment (x1, y1) - (x2, y2) on the grid
+	*/
 	public void drawSegment(int x1, int y1, int x2, int y2) {
 		// this.stroke(50);
 		// this.fill(200, 200, 200);
@@ -254,8 +254,8 @@ public class GraphViewer extends PApplet {
 	}
 
 	/**
-	 * Draw a grid layout of the graph
-	 */
+	* Draw a grid layout of the graph
+	*/
 	public void drawLayout() {
 		if (graph == null)
 			return;
@@ -302,13 +302,21 @@ public class GraphViewer extends PApplet {
 
 			solution = new GraphSolution(graph);
 
-			Optimizer opti = new MarkovOptimizer();
+			Optimizer opti = new DsaturOptimizer();
+
 			long startTime = System.currentTimeMillis();
 			opti.solve(solution);
 			System.out.println("Solution with " + solution.nbColors + " colors computed in "
 					+ (System.currentTimeMillis() - startTime) + "ms");
 			// solution.colorEdge(2, 1);
 			// solution.colorEdge(3, 2);
+
+			opti = new MarkovOptimizer();
+			opti.solve(solution);
+			System.out.println("Markove amelioration : Solution with " + solution.nbColors + " colors computed in "
+					+ (System.currentTimeMillis() - startTime) + "ms");
+
+
 			if (CheckSolution.check(solution)) {
 				System.out.println("The solution found is correct");
 			} else {

@@ -1,4 +1,4 @@
-JFLAGS = -g -cp .:core3.jar -d compiled
+JFLAGS = -g -cp .:core3.jar
 JC = javac
 .SUFFIXES: .java .class
 .java.class:
@@ -35,4 +35,4 @@ default: classes
 classes: $(CLASSES:.java=.class)
 
 clean:
-	$(RM) compiled/*.class
+	$(RM) *.class
