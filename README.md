@@ -4,8 +4,12 @@ New dependency : org.json.\*
 
 Machines:
 
-* 129.104.253.68 encyclia.polytechnique.fr encyclia
-* 129.104.253.69 epipactis.polytechnique.fr epipactis
+* 129.104.253.68 encyclia.polytechnique.fr encyclia (simple)
+* 129.104.253.69 epipactis.polytechnique.fr epipactis (simple)
+* loire (dsatur)
+* jura (dsatur)
+* landes (dsatur)
+* indre (dsatur)
 
 ```bash
 C:\Users\efabr\Documents_Docs\Travail\INF421> scp -r Minimum-Partition-into-Plane-Subgraphs fabien.roger@url:Project

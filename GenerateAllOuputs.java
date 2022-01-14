@@ -6,13 +6,13 @@ import java.util.ArrayList;
 public class GenerateAllOuputs {
 
     static String inputPrefix = "all";
-    static String outputPrefix = "allDsatur2";
-    static String startWithPrefix = "visp";
+    static String outputPrefix = "";
+    static String startWithPrefix = "";
 
     private static int generateSolution(String inputFile) {
         HashGraphWithInfo graph = IO.loadInput(inputFile);
         GraphSolution solution = new GraphSolution(graph);
-        Optimizer optimizer = new SimpleOptimizer();
+        Optimizer optimizer = new DsaturOptimizer();
         optimizer.solve(solution);
 
         if (!CheckSolution.check(solution)) {
@@ -28,6 +28,9 @@ public class GenerateAllOuputs {
     }
 
     public static void main(String[] args) {
+        startWithPrefix = args[0];
+        outputPrefix = args[1];
+
         File folder = new File(inputPrefix + "instances");
         File[] listOfFiles = folder.listFiles();
 
