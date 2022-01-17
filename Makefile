@@ -21,7 +21,9 @@ CLASSES = \
 	IO.java	\
 	TC.java \
 	GraphViewer.java \
-	GenerateAllOuputs.java
+	GenerateAllOuputs.java \
+	GenerateAllOuputsWithHeuristic.java \
+	DsaturOptimizerWithHeuristic.java
 
 default: classes
 

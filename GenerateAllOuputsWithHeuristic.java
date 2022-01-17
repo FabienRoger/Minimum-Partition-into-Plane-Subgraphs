@@ -3,16 +3,18 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class GenerateAllOuputs {
+public class GenerateAllOuputsWithHeuristic {
 
-    static String inputPrefix = "";
+    static String inputPrefix = "all";
     static String outputPrefix = "";
     static String startWithPrefix = "";
+    static double lengthWeight = 4.0;
 
-    private static int generateSolution(String inputFile) {
+    private static int generateSolution(String inputFile, double lw) {
         HashGraphWithInfo graph = IO.loadInput(inputFile);
         GraphSolution solution = new GraphSolution(graph);
-        Optimizer optimizer = new DsaturOptimizerLight();
+        Optimizer optimizer = new DsaturOptimizerWithHeuristicLight(lw);
+        // Optimizer optimizer = new DsaturOptimizerWithHeuristic(lw, 0, false, true);
         optimizer.solve(solution);
 
         if (!CheckSolution.check(solution)) {
@@ -30,6 +32,7 @@ public class GenerateAllOuputs {
     public static void main(String[] args) {
         startWithPrefix = args[0];
         outputPrefix = args[1];
+        lengthWeight = Double.parseDouble(args[2]);
 
         File folder = new File(inputPrefix + "instances");
         File[] listOfFiles = folder.listFiles();
@@ -46,7 +49,7 @@ public class GenerateAllOuputs {
                 String inputFile = inputPrefix + "instances/" + file.getName();
 
                 long start = System.currentTimeMillis();
-                int colors = generateSolution(inputFile);
+                int colors = generateSolution(inputFile, lengthWeight);
                 results.add("Solution for " + file.getName()
                         + " generated with " + colors + " colors"
                         + " in " + (System.currentTimeMillis() - start) + "ms");
