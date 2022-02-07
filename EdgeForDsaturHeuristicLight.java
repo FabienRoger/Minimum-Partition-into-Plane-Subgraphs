@@ -8,7 +8,6 @@ public class EdgeForDsaturHeuristicLight extends Edge {
     boolean colored = false;
     int color = -1;
     double score = 0;
-    // int intersections = 0;
 
     EdgeForDsaturHeuristicLight(Point a, Point b, int id) {
         super(a, b);

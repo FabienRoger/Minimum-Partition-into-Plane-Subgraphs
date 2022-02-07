@@ -13,8 +13,8 @@ public class GenerateAllOuputsWithHeuristic {
     private static int generateSolution(String inputFile, double lw) {
         HashGraphWithInfo graph = IO.loadInput(inputFile);
         GraphSolution solution = new GraphSolution(graph);
-        Optimizer optimizer = new DsaturOptimizerWithHeuristicLight(lw);
-        // Optimizer optimizer = new DsaturOptimizerWithHeuristic(lw, 0, false, true);
+        // Optimizer optimizer = new DsaturOptimizerWithHeuristicLight(lw);
+        Optimizer optimizer = new DsaturOptimizerWithHeuristic(lw, 0, false, true);
         optimizer.solve(solution);
 
         if (!CheckSolution.check(solution)) {

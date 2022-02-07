@@ -30,4 +30,8 @@ public class GraphSolution {
         nbColors = Math.max(color + 1, nbColors);
         edgeColors[i] = color;
     }
+
+    int color(Edge e) {
+        return edgeColors[this.graph.edgeHashMap.get(e)];
+    }
 }
