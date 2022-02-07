@@ -12,6 +12,11 @@ def get_scores(summary):
     return [int(line.split(" ")[-4]) for line in summary]
 
 
+def get_times(summary):
+    # print([line.split(" ")[-1][:-3] for line in summary])
+    return [int(line.split(" ")[-1][:-3]) for line in summary]
+
+
 def mean(list):
     return sum(list) / len(list)
 
@@ -71,6 +76,27 @@ def plot_number_of_bests(data):
     plt.show()
 
 
+def plot_running_times(data, labels):
+    height = [mean(d[2]) // 1000 for d in data if d[0] in labels]
+    bars = [d[0] for d in data if d[0] in labels]
+    y_pos = np.arange(len(bars))
+
+    # Create bars
+    plt.barh(y_pos, height)
+
+    plt.yticks(y_pos, bars, rotation=20)
+    plt.ylabel("method")
+    plt.xlabel("execution time (s)")
+    # plt.subplots_adjust(left=+0.2)
+    plt.subplots_adjust(bottom=0.2)
+
+    for i, v in enumerate(height):
+        plt.text(v + 2, i, str(int(v)))
+
+    # Show graphic
+    plt.show()
+
+
 if __name__ == "__main__":
 
     data = []
@@ -82,12 +108,15 @@ if __name__ == "__main__":
             with open(f, "r") as file:
                 summary = file.readlines()
                 scores = get_scores(summary)
+                times = get_times(summary)
                 print(filename.split(".")[0], len(scores))
 
                 # Consider only complete summaries
                 if len(scores) == NUMBER_OF_TESTS:
-                    data.append((filename.split(".")[0], scores))
+                    data.append((filename.split(".")[0], scores, times))
 
+    data.sort(key=lambda d: mean(d[2]), reverse=False)
+    plot_running_times(data, ["simple", "greedy", "dsatur"])
     data.sort(key=lambda d: mean(d[1]), reverse=False)
-    plot_number_of_bests(data)
+    # plot_number_of_bests(data)
     # plot_average_scores(data)
