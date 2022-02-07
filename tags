@@ -1,0 +1,514 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+AdjacencyListGraph	code_prof/jdg/graph/AdjacencyListGraph.java	/^	public AdjacencyListGraph() {$/;"	m	class:AdjacencyListGraph
+AdjacencyListGraph	code_prof/jdg/graph/AdjacencyListGraph.java	/^public class AdjacencyListGraph {$/;"	c
+CLASSES	Makefile	/^CLASSES = \\$/;"	m
+CheckSolution	CheckSolution.java	/^public class CheckSolution {$/;"	c
+ColorOnePoint	ColorOnePoint.java	/^public class ColorOnePoint extends Optimizer {$/;"	c
+DOT_PATTERN	TC.java	/^  private static final Pattern DOT_PATTERN = Pattern.compile(".",$/;"	f	class:TC	file:
+DOT_PATTERN	code_prof/TC.java	/^  private static final Pattern DOT_PATTERN = Pattern.compile(".",$/;"	f	class:TC	file:
+DsaturOptimizer	DsaturOptimizer.java	/^public class DsaturOptimizer extends Optimizer {$/;"	c
+DsaturOptimizerWithHeuristic	DsaturOptimizerWithHeuristic.java	/^    DsaturOptimizerWithHeuristic(double lengthWeight, double centerWeight,$/;"	m	class:DsaturOptimizerWithHeuristic
+DsaturOptimizerWithHeuristic	DsaturOptimizerWithHeuristic.java	/^public class DsaturOptimizerWithHeuristic extends Optimizer {$/;"	c
+Edge	Edge.java	/^    Edge(Point a, Point b) {$/;"	m	class:Edge
+Edge	Edge.java	/^public class Edge {$/;"	c
+Edge	code_prof/jdg/graph/Edge.java	/^	public Edge() {}$/;"	m	class:Edge
+Edge	code_prof/jdg/graph/Edge.java	/^	public Edge(Node a, Node b, int index) { $/;"	m	class:Edge
+Edge	code_prof/jdg/graph/Edge.java	/^public class Edge {$/;"	c
+EdgeForDsatur	EdgeForDsatur.java	/^    EdgeForDsatur(Point a, Point b, int id) {$/;"	m	class:EdgeForDsatur
+EdgeForDsatur	EdgeForDsatur.java	/^public class EdgeForDsatur extends Edge {$/;"	c
+EdgeWithInfo	EdgeWithInfo.java	/^    EdgeWithInfo(Point a, Point b, int id) {$/;"	m	class:EdgeWithInfo
+EdgeWithInfo	EdgeWithInfo.java	/^public class EdgeWithInfo extends Edge {$/;"	c
+GenerateAllOuputs	GenerateAllOuputs.java	/^public class GenerateAllOuputs {$/;"	c
+GenerateAllOuputsWithResearch	GenerateAllOuputsWithResearch.java	/^public class GenerateAllOuputsWithResearch {$/;"	c
+Graph	Graph.java	/^public abstract class Graph {$/;"	c
+GraphIO	code_prof/GraphIO.java	/^public class GraphIO {$/;"	c
+GraphIntersection	GraphIntersection.java	/^	GraphIntersection(GraphSolution graph){$/;"	m	class:GraphIntersection
+GraphIntersection	GraphIntersection.java	/^class GraphIntersection {$/;"	c
+GraphSolution	GraphSolution.java	/^    GraphSolution(HashGraphWithInfo graph) {$/;"	m	class:GraphSolution
+GraphSolution	GraphSolution.java	/^public class GraphSolution {$/;"	c
+GraphViewer	GraphViewer.java	/^public class GraphViewer extends PApplet {$/;"	c
+GreedyOptimizer	GreedyOptimizer.java	/^public class GreedyOptimizer extends Optimizer {$/;"	c
+GridLayout	code_prof/jdg/graph/GridLayout.java	/^	public GridLayout(AdjacencyListGraph g, GridPoint[] points) {$/;"	m	class:GridLayout
+GridLayout	code_prof/jdg/graph/GridLayout.java	/^public class GridLayout {$/;"	c
+GridPoint	code_prof/jdg/graph/GridPoint.java	/^	public GridPoint() {}$/;"	m	class:GridPoint
+GridPoint	code_prof/jdg/graph/GridPoint.java	/^	public GridPoint(GridPoint p) { $/;"	m	class:GridPoint
+GridPoint	code_prof/jdg/graph/GridPoint.java	/^	public GridPoint(int x,int y) { $/;"	m	class:GridPoint
+GridPoint	code_prof/jdg/graph/GridPoint.java	/^public class GridPoint {$/;"	c
+HashGraph	HashGraph.java	/^class HashGraph extends Graph {$/;"	c
+HashGraphWithInfo	HashGraphWithInfo.java	/^    HashGraphWithInfo(String s_id) {$/;"	m	class:HashGraphWithInfo
+HashGraphWithInfo	HashGraphWithInfo.java	/^public class HashGraphWithInfo extends HashGraph {$/;"	c
+IN	TC.java	/^  private static final Scanner IN = scanner(new InputStreamReader(System.in));$/;"	f	class:TC	file:
+IN	code_prof/TC.java	/^  private static final Scanner IN = scanner(new InputStreamReader(System.in));$/;"	f	class:TC	file:
+INPUT_MISMATCH	TC.java	/^  private static final String INPUT_MISMATCH = "L'entr\\u00e9e n'est pas du type attendu.";$/;"	f	class:TC	file:
+INPUT_MISMATCH	code_prof/TC.java	/^  private static final String INPUT_MISMATCH = "L'entr\\u00e9e n'est pas du type attendu.";$/;"	f	class:TC	file:
+IO	IO.java	/^public class IO {$/;"	c
+Instance	code_prof/Instance.java	/^    public Instance(String name, int n, int m, int[] x, int[] y, int[] edge_i, int[] edge_j) {$/;"	m	class:Instance
+Instance	code_prof/Instance.java	/^public class Instance {$/;"	c
+JC	Makefile	/^JC = javac$/;"	m
+JFLAGS	Makefile	/^JFLAGS = -g -cp .:core3.jar$/;"	m
+MarkovOptimizer	MarkovOptimizer.java	/^public class MarkovOptimizer extends Optimizer {$/;"	c
+MyBestAlgorithm	code_prof/MyBestAlgorithm.java	/^	public MyBestAlgorithm(Instance instance) {$/;"	m	class:MyBestAlgorithm
+MyBestAlgorithm	code_prof/MyBestAlgorithm.java	/^public class MyBestAlgorithm {$/;"	c
+MyButton	MyButton.java	/^  public MyButton(PApplet parent, String labelB, float xpos, float ypos, float widthB, float heightB) {$/;"	m	class:MyButton
+MyButton	MyButton.java	/^public class MyButton {$/;"	c
+NO_SUCH_ELEMENT	TC.java	/^  private static final String NO_SUCH_ELEMENT = "La fin de l'entr\\u00e9e est atteinte.";$/;"	f	class:TC	file:
+NO_SUCH_ELEMENT	code_prof/TC.java	/^  private static final String NO_SUCH_ELEMENT = "La fin de l'entr\\u00e9e est atteinte.";$/;"	f	class:TC	file:
+N_iter	MarkovOptimizer.java	/^	static int N_iter = 50000;$/;"	f	class:MarkovOptimizer
+Node	code_prof/jdg/graph/Node.java	/^	    public Node(int index) { $/;"	m	class:Node
+Node	code_prof/jdg/graph/Node.java	/^	    public Node(int index, Color color) { $/;"	m	class:Node
+Node	code_prof/jdg/graph/Node.java	/^	    public Node(int index, Color color, String label) { $/;"	m	class:Node
+Node	code_prof/jdg/graph/Node.java	/^public class Node {$/;"	c
+Optimize	code_prof/Optimize.java	/^public class Optimize {$/;"	c
+Optimizer	Optimizer.java	/^public abstract class Optimizer {$/;"	c
+Point	Point.java	/^	Point(int px, int py) {$/;"	m	class:Point
+Point	Point.java	/^class Point {$/;"	c
+SimpleOptimizer	SimpleOptimizer.java	/^public class SimpleOptimizer extends Optimizer {$/;"	c
+Solution	code_prof/Solution.java	/^	public Solution(String name, int m) {$/;"	m	class:Solution
+Solution	code_prof/Solution.java	/^	public Solution(String name, int numColors, int[] colors) {$/;"	m	class:Solution
+Solution	code_prof/Solution.java	/^public class Solution {$/;"	c
+StringDeFichier	TC.java	/^  static String StringDeFichier(String fileName) {$/;"	m	class:TC
+StringDeFichier	code_prof/TC.java	/^  static String StringDeFichier(String fileName) {$/;"	m	class:TC
+TC	TC.java	/^  private TC() {$/;"	m	class:TC	file:
+TC	TC.java	/^public class TC {$/;"	c
+TC	code_prof/TC.java	/^  private TC() {$/;"	m	class:TC	file:
+TC	code_prof/TC.java	/^public class TC {$/;"	c
+TCException	TC.java	/^  TCException(String message) {$/;"	m	class:TCException
+TCException	TC.java	/^class TCException extends RuntimeException {$/;"	c
+TCException	code_prof/TC.java	/^  TCException(String message) {$/;"	m	class:TCException
+TCException	code_prof/TC.java	/^class TCException extends RuntimeException {$/;"	c
+TestMain	TestMain.java	/^public class TestMain {$/;"	c
+a	Edge.java	/^    Point a, b;$/;"	f	class:Edge
+addEdge	code_prof/jdg/graph/AdjacencyListGraph.java	/^   public void addEdge(Node a, Node b) {$/;"	m	class:AdjacencyListGraph
+addNeighbor	code_prof/jdg/graph/Node.java	/^	    public void addNeighbor(Node v) {$/;"	m	class:Node
+addNode	code_prof/jdg/graph/AdjacencyListGraph.java	/^	public void addNode(Node v) {$/;"	m	class:AdjacencyListGraph
+add_arete	Graph.java	/^    abstract void add_arete(Point a, Point b);$/;"	m	class:Graph
+add_arete	HashGraph.java	/^	void add_arete(Point a, Point b) {$/;"	m	class:HashGraph
+add_arete	HashGraph.java	/^	void add_arete(int i, int j){$/;"	m	class:HashGraph
+add_arete	HashGraphWithInfo.java	/^    void add_arete(Point a, Point b) {$/;"	m	class:HashGraphWithInfo
+add_arete	HashGraphWithInfo.java	/^    void add_arete(int i, int j) {$/;"	m	class:HashGraphWithInfo
+adjacent	code_prof/jdg/graph/AdjacencyListGraph.java	/^    public boolean adjacent(Node a, Node b) {$/;"	m	class:AdjacencyListGraph
+adjacent	code_prof/jdg/graph/Node.java	/^	    public boolean adjacent(Node v) {$/;"	m	class:Node
+afficher	TC.java	/^  static void afficher(String s) {$/;"	m	class:TC
+afficher	TC.java	/^  static void afficher(char c) {$/;"	m	class:TC
+afficher	TC.java	/^  static void afficher(char[] s) {$/;"	m	class:TC
+afficher	TC.java	/^  static void afficher(double d) {$/;"	m	class:TC
+afficher	TC.java	/^  static void afficher(int i) {$/;"	m	class:TC
+afficher	TC.java	/^  static void afficher(long l) {$/;"	m	class:TC
+afficher	code_prof/TC.java	/^  static void afficher(String s) {$/;"	m	class:TC
+afficher	code_prof/TC.java	/^  static void afficher(char c) {$/;"	m	class:TC
+afficher	code_prof/TC.java	/^  static void afficher(char[] s) {$/;"	m	class:TC
+afficher	code_prof/TC.java	/^  static void afficher(double d) {$/;"	m	class:TC
+afficher	code_prof/TC.java	/^  static void afficher(int i) {$/;"	m	class:TC
+afficher	code_prof/TC.java	/^  static void afficher(long l) {$/;"	m	class:TC
+afficherln	TC.java	/^  static void afficherln() {$/;"	m	class:TC
+afficherln	TC.java	/^  static void afficherln(char c) {$/;"	m	class:TC
+afficherln	TC.java	/^  static void afficherln(double d) {$/;"	m	class:TC
+afficherln	TC.java	/^  static void afficherln(int i) {$/;"	m	class:TC
+afficherln	TC.java	/^  static void afficherln(long l) {$/;"	m	class:TC
+afficherln	code_prof/TC.java	/^  static void afficherln() {$/;"	m	class:TC
+afficherln	code_prof/TC.java	/^  static void afficherln(char c) {$/;"	m	class:TC
+afficherln	code_prof/TC.java	/^  static void afficherln(double d) {$/;"	m	class:TC
+afficherln	code_prof/TC.java	/^  static void afficherln(int i) {$/;"	m	class:TC
+afficherln	code_prof/TC.java	/^  static void afficherln(long l) {$/;"	m	class:TC
+afficherlnString	TC.java	/^  static void afficherlnString(String s) {$/;"	m	class:TC
+afficherlnString	code_prof/TC.java	/^  static void afficherlnString(String s) {$/;"	m	class:TC
+afficherlnTableauChar	TC.java	/^  static void afficherlnTableauChar(char[] s) {$/;"	m	class:TC
+afficherlnTableauChar	code_prof/TC.java	/^  static void afficherlnTableauChar(char[] s) {$/;"	m	class:TC
+b	Edge.java	/^    Point a, b;$/;"	f	class:Edge
+centerWeight	DsaturOptimizerWithHeuristic.java	/^    double lengthWeight, centerWeight;$/;"	f	class:DsaturOptimizerWithHeuristic
+chaineDeFichier	TC.java	/^  static String chaineDeFichier(String fileName) {$/;"	m	class:TC
+chaineDeFichier	code_prof/TC.java	/^  static String chaineDeFichier(String fileName) {$/;"	m	class:TC
+charDeChaine	TC.java	/^  static char[] charDeChaine(String input) {$/;"	m	class:TC
+charDeChaine	code_prof/TC.java	/^  static char[] charDeChaine(String input) {$/;"	m	class:TC
+charDeFichier	TC.java	/^  static char[] charDeFichier(String fileName) {$/;"	m	class:TC
+charDeFichier	code_prof/TC.java	/^  static char[] charDeFichier(String fileName) {$/;"	m	class:TC
+check	CheckSolution.java	/^    static boolean check(GraphSolution solution) {$/;"	m	class:CheckSolution
+checkOutputFile	IO.java	/^	public static boolean checkOutputFile(String filename, GraphSolution instance) {$/;"	m	class:IO
+colo_voisins	GraphIntersection.java	/^	HashMap<Edge, HashSet<Integer>> colo_voisins = new HashMap<Edge, HashSet<Integer>>();$/;"	f	class:GraphIntersection
+color	DsaturOptimizer.java	/^    void color(EdgeForDsatur e, int color) {$/;"	m	class:DsaturOptimizer
+color	DsaturOptimizerWithHeuristic.java	/^    void color(EdgeForDsatur e, int color) {$/;"	m	class:DsaturOptimizerWithHeuristic
+color	EdgeForDsatur.java	/^    int color = -1;$/;"	f	class:EdgeForDsatur
+color	code_prof/jdg/graph/Node.java	/^	public Color color;$/;"	f	class:Node
+colorEdge	GraphSolution.java	/^    void colorEdge(Edge e, int color) {$/;"	m	class:GraphSolution
+colorEdge	GraphSolution.java	/^    void colorEdge(Point a, Point b, int color) {$/;"	m	class:GraphSolution
+colorEdge	GraphSolution.java	/^    void colorEdge(int i, int color) {$/;"	m	class:GraphSolution
+colored	EdgeForDsatur.java	/^    boolean colored = false;$/;"	f	class:EdgeForDsatur
+colors	code_prof/Solution.java	/^	public int[] colors;$/;"	f	class:Solution
+colorsMex	GreedyOptimizer.java	/^    private int colorsMex(int edge) {$/;"	m	class:GreedyOptimizer	file:
+colorsMex	SimpleOptimizer.java	/^    private int colorsMex(int edge) {$/;"	m	class:SimpleOptimizer	file:
+computeBoundingBox	code_prof/Instance.java	/^    public void computeBoundingBox() {$/;"	m	class:Instance
+currentMousePosition	GraphViewer.java	/^	int[] currentMousePosition; \/\/ mouse position on the screen (pixels)$/;"	f	class:GraphViewer
+currentOutput	TC.java	/^  private static volatile PrintStream currentOutput = System.out;$/;"	f	class:TC	file:
+currentOutput	code_prof/TC.java	/^  private static volatile PrintStream currentOutput = System.out;$/;"	f	class:TC	file:
+currentScanner	TC.java	/^  private static volatile Scanner currentScanner = IN;$/;"	f	class:TC	file:
+currentScanner	code_prof/TC.java	/^  private static volatile Scanner currentScanner = IN;$/;"	f	class:TC	file:
+darkGrayColor	GraphViewer.java	/^	private int[] darkGrayColor = new int[] { 100, 100, 100 };$/;"	f	class:GraphViewer	file:
+darkGrayColor	MyButton.java	/^	static private int[] darkGrayColor=new int[] {100, 100, 100};$/;"	f	class:MyButton	file:
+decoupage	TC.java	/^  public static String[] decoupage(String chaine, char separateur) {$/;"	m	class:TC
+decoupage	code_prof/TC.java	/^  public static String[] decoupage(String chaine, char separateur) {$/;"	m	class:TC
+degree	code_prof/jdg/graph/AdjacencyListGraph.java	/^    public int degree(Node v) {$/;"	m	class:AdjacencyListGraph
+degree	code_prof/jdg/graph/Node.java	/^	    public int degree() {$/;"	m	class:Node
+demarrerChrono	TC.java	/^  void demarrerChrono() {$/;"	m	class:TC
+demarrerChrono	code_prof/TC.java	/^  void demarrerChrono() {$/;"	m	class:TC
+dimension	code_prof/jdg/graph/GridPoint.java	/^	public int dimension() { return 2;}$/;"	m	class:GridPoint
+dist	Point.java	/^	double dist(Point o) {$/;"	m	class:Point
+doubleDeChaine	TC.java	/^  static double[] doubleDeChaine(String input) {$/;"	m	class:TC
+doubleDeChaine	code_prof/TC.java	/^  static double[] doubleDeChaine(String input) {$/;"	m	class:TC
+doubleDeFichier	TC.java	/^  static double[] doubleDeFichier(String fileName) {$/;"	m	class:TC
+doubleDeFichier	code_prof/TC.java	/^  static double[] doubleDeFichier(String fileName) {$/;"	m	class:TC
+doubleDeScanner	TC.java	/^  private static double[] doubleDeScanner(Scanner scanner) {$/;"	m	class:TC	file:
+doubleDeScanner	code_prof/TC.java	/^  private static double[] doubleDeScanner(Scanner scanner) {$/;"	m	class:TC	file:
+draw	GraphViewer.java	/^	public void draw() {$/;"	m	class:GraphViewer
+draw	MyButton.java	/^  public void draw() {$/;"	m	class:MyButton
+drawBlackPoint	GraphViewer.java	/^	public void drawBlackPoint(int x, int y) {$/;"	m	class:GraphViewer
+drawLabel	GraphViewer.java	/^	public void drawLabel(String label, int x, int y) {$/;"	m	class:GraphViewer
+drawLayout	GraphViewer.java	/^	public void drawLayout() {$/;"	m	class:GraphViewer
+drawOptions	GraphViewer.java	/^	public void drawOptions() {$/;"	m	class:GraphViewer
+drawSegment	GraphViewer.java	/^	public void drawSegment(int x1, int y1, int x2, int y2) {$/;"	m	class:GraphViewer
+drawWhitePoint	GraphViewer.java	/^	public void drawWhitePoint(int x, int y) {$/;"	m	class:GraphViewer
+e	code_prof/jdg/graph/GridLayout.java	/^	public int e;$/;"	f	class:GridLayout
+ecritureDansNouveauFichier	TC.java	/^  public static void ecritureDansNouveauFichier(String nomFichier) {$/;"	m	class:TC
+ecritureDansNouveauFichier	code_prof/TC.java	/^  public static void ecritureDansNouveauFichier(String nomFichier) {$/;"	m	class:TC
+ecritureEnFinDeFichier	TC.java	/^  public static void ecritureEnFinDeFichier(String nomFichier) {$/;"	m	class:TC
+ecritureEnFinDeFichier	code_prof/TC.java	/^  public static void ecritureEnFinDeFichier(String nomFichier) {$/;"	m	class:TC
+ecritureFichier	TC.java	/^  private static void ecritureFichier(String fileName, boolean append) {$/;"	m	class:TC	file:
+ecritureFichier	code_prof/TC.java	/^  private static void ecritureFichier(String fileName, boolean append) {$/;"	m	class:TC	file:
+ecriturePrintStream	TC.java	/^  public static void ecriturePrintStream(PrintStream output) {$/;"	m	class:TC
+ecriturePrintStream	code_prof/TC.java	/^  public static void ecriturePrintStream(PrintStream output) {$/;"	m	class:TC
+ecritureSortieStandard	TC.java	/^  public static void ecritureSortieStandard() {$/;"	m	class:TC
+ecritureSortieStandard	code_prof/TC.java	/^  public static void ecritureSortieStandard() {$/;"	m	class:TC
+edgeColors	GraphSolution.java	/^    int[] edgeColors;$/;"	f	class:GraphSolution
+edgeHashMap	HashGraphWithInfo.java	/^    HashMap<Edge, Integer> edgeHashMap = new HashMap<>();$/;"	f	class:HashGraphWithInfo
+edge_i	code_prof/Instance.java	/^    int[] edge_i, edge_j;$/;"	f	class:Instance
+edge_j	code_prof/Instance.java	/^    int[] edge_i, edge_j;$/;"	f	class:Instance
+edges	DsaturOptimizer.java	/^    ArrayList<EdgeForDsatur> edges;$/;"	f	class:DsaturOptimizer
+edges	DsaturOptimizerWithHeuristic.java	/^    ArrayList<EdgeForDsatur> edges;$/;"	f	class:DsaturOptimizerWithHeuristic
+edges	GreedyOptimizer.java	/^    ArrayList<EdgeWithInfo> edges;$/;"	f	class:GreedyOptimizer
+edges	HashGraphWithInfo.java	/^    ArrayList<Edge> edges = new ArrayList<Edge>();$/;"	f	class:HashGraphWithInfo
+edges	SimpleOptimizer.java	/^    ArrayList<Edge> edges;$/;"	f	class:SimpleOptimizer
+edges	code_prof/jdg/graph/AdjacencyListGraph.java	/^	public HashMap<Edge,Integer> edges;$/;"	f	class:AdjacencyListGraph
+edgesColor	GreedyOptimizer.java	/^    int edgesColor[];$/;"	f	class:GreedyOptimizer
+edgesToColor	DsaturOptimizer.java	/^    TreeSet<EdgeForDsatur> edgesToColor;$/;"	f	class:DsaturOptimizer
+edgesToColor	DsaturOptimizerWithHeuristic.java	/^    TreeSet<EdgeForDsatur> edgesToColor;$/;"	f	class:DsaturOptimizerWithHeuristic
+eof	TC.java	/^  static boolean eof() {$/;"	m	class:TC
+eof	code_prof/TC.java	/^  static boolean eof() {$/;"	m	class:TC
+equal	Edge.java	/^    boolean equal(Edge o) {$/;"	m	class:Edge
+equal	Point.java	/^	boolean equal(Point o) {$/;"	m	class:Point
+equals	Edge.java	/^    public boolean equals(Object o) {$/;"	m	class:Edge
+equals	code_prof/jdg/graph/Edge.java	/^	public boolean equals(Object o) {$/;"	m	class:Edge
+equals	code_prof/jdg/graph/GridPoint.java	/^	public boolean equals(Object o) {$/;"	m	class:GridPoint
+euclideanDistance	code_prof/jdg/graph/GridPoint.java	/^	public double euclideanDistance(GridPoint p) {$/;"	m	class:GridPoint
+exportJson	GraphViewer.java	/^	public MyButton exportJson;$/;"	f	class:GraphViewer
+fin	TC.java	/^  static boolean fin() {$/;"	m	class:TC
+fin	code_prof/TC.java	/^  static boolean fin() {$/;"	m	class:TC
+finEntree	TC.java	/^  public static boolean finEntree() {$/;"	m	class:TC
+finEntree	code_prof/TC.java	/^  public static boolean finEntree() {$/;"	m	class:TC
+findConnectedComponent	code_prof/jdg/graph/AdjacencyListGraph.java	/^    public List<Node> findConnectedComponent(Node v){$/;"	m	class:AdjacencyListGraph
+first	code_prof/jdg/graph/Edge.java	/^	public Node first, second;$/;"	f	class:Edge
+g	code_prof/jdg/graph/GridLayout.java	/^	public AdjacencyListGraph g;$/;"	f	class:GridLayout
+generateSolution	GenerateAllOuputs.java	/^    private static int generateSolution(String inputFile) {$/;"	m	class:GenerateAllOuputs	file:
+generateSolution	GenerateAllOuputsWithResearch.java	/^    private static int generateSolution(String inputFile, double lw, double cw) {$/;"	m	class:GenerateAllOuputsWithResearch	file:
+getCartesian	code_prof/jdg/graph/GridPoint.java	/^	public int getCartesian(int dim) {$/;"	m	class:GridPoint
+getEdgeIndex	code_prof/jdg/graph/AdjacencyListGraph.java	/^	public int getEdgeIndex(Node a, Node b) {$/;"	m	class:AdjacencyListGraph
+getIndices	code_prof/jdg/graph/AdjacencyListGraph.java	/^    public int[] getIndices() {$/;"	m	class:AdjacencyListGraph
+getLabel	code_prof/jdg/graph/Node.java	/^	    public String getLabel() {$/;"	m	class:Node
+getNeighbors	code_prof/jdg/graph/AdjacencyListGraph.java	/^    public Collection<Node> getNeighbors(Node v) {$/;"	m	class:AdjacencyListGraph
+getNode	code_prof/jdg/graph/AdjacencyListGraph.java	/^	public Node getNode(int index) {$/;"	m	class:AdjacencyListGraph
+getPixel	GraphViewer.java	/^	public int[] getPixel(double x, double y) {$/;"	m	class:GraphViewer
+getRandomElement	MarkovOptimizer.java	/^	private static <E> E getRandomElement(Set<? extends E> set){$/;"	m	class:MarkovOptimizer	file:
+getTag	code_prof/jdg/graph/Node.java	/^	    public int getTag() { $/;"	m	class:Node
+getX	code_prof/jdg/graph/GridPoint.java	/^	public int getX() {return x; }$/;"	m	class:GridPoint
+getY	code_prof/jdg/graph/GridPoint.java	/^	public int getY() {return y; }$/;"	m	class:GridPoint
+graph	GraphSolution.java	/^    HashGraphWithInfo graph;$/;"	f	class:GraphSolution
+graph	GraphViewer.java	/^	public static HashGraphWithInfo graph;$/;"	f	class:GraphViewer
+graph	HashGraph.java	/^	HashMap<Point, ArrayList<Point>> graph = new HashMap<Point, ArrayList<Point>>();$/;"	f	class:HashGraph
+graph	MarkovOptimizer.java	/^	GraphIntersection graph;$/;"	f	class:MarkovOptimizer
+grayColor	GraphViewer.java	/^	private int[] grayColor = new int[] { 150, 150, 150 };$/;"	f	class:GraphViewer	file:
+h	MyButton.java	/^  float h;    \/\/ height of button$/;"	f	class:MyButton
+hashCode	Edge.java	/^    public int hashCode() {$/;"	m	class:Edge
+hashCode	Point.java	/^	public int hashCode() {$/;"	m	class:Point
+hashCode	code_prof/jdg/graph/Edge.java	/^	public int hashCode () {$/;"	m	class:Edge
+hashCode	code_prof/jdg/graph/GridPoint.java	/^	public int hashCode () {$/;"	m	class:GridPoint
+hashCode	code_prof/jdg/graph/Node.java	/^	    public int hashCode() {$/;"	m	class:Node
+id	EdgeForDsatur.java	/^    int id;$/;"	f	class:EdgeForDsatur
+id	EdgeWithInfo.java	/^    int id;$/;"	f	class:EdgeWithInfo
+id	GraphSolution.java	/^    String id;$/;"	f	class:GraphSolution
+id	HashGraph.java	/^	String id;$/;"	f	class:HashGraph
+id	code_prof/Instance.java	/^    String id;$/;"	f	class:Instance
+index	code_prof/jdg/graph/Edge.java	/^	public int index;$/;"	f	class:Edge
+index	code_prof/jdg/graph/GridPoint.java	/^	public int index;$/;"	f	class:GridPoint
+index	code_prof/jdg/graph/Node.java	/^	public int index;$/;"	f	class:Node
+info	code_prof/jdg/graph/AdjacencyListGraph.java	/^    public String info() {$/;"	m	class:AdjacencyListGraph
+inputPrefix	GenerateAllOuputs.java	/^    static String inputPrefix = "all";$/;"	f	class:GenerateAllOuputs
+instance	code_prof/MyBestAlgorithm.java	/^	public Instance instance;$/;"	f	class:MyBestAlgorithm
+instance	code_prof/Solution.java	/^	public String instance;$/;"	f	class:Solution
+intDeChaine	TC.java	/^  static int[] intDeChaine(String input) {$/;"	m	class:TC
+intDeChaine	code_prof/TC.java	/^  static int[] intDeChaine(String input) {$/;"	m	class:TC
+intDeFichier	TC.java	/^  static int[] intDeFichier(String fileName) {$/;"	m	class:TC
+intDeFichier	code_prof/TC.java	/^  static int[] intDeFichier(String fileName) {$/;"	m	class:TC
+intDeScanner	TC.java	/^  private static int[] intDeScanner(Scanner scanner) {$/;"	m	class:TC	file:
+intDeScanner	code_prof/TC.java	/^  private static int[] intDeScanner(Scanner scanner) {$/;"	m	class:TC	file:
+intersect	Edge.java	/^    public boolean intersect(Edge e) {$/;"	m	class:Edge
+intersect	Edge.java	/^    static private boolean intersect(Point p1, Point q1, Point p2, Point q2) {$/;"	m	class:Edge	file:
+intersections	EdgeForDsatur.java	/^    ArrayList<EdgeForDsatur> intersections = new ArrayList<>();$/;"	f	class:EdgeForDsatur
+intersections	SimpleOptimizer.java	/^    ArrayList<ArrayList<Integer>> intersections;$/;"	f	class:SimpleOptimizer
+intersectionsColors	EdgeForDsatur.java	/^    TreeSet<Integer> intersectionsColors = new TreeSet<>();$/;"	f	class:EdgeForDsatur
+isConnected	code_prof/jdg/graph/AdjacencyListGraph.java	/^    public boolean isConnected(){$/;"	m	class:AdjacencyListGraph
+isIsolated	code_prof/jdg/graph/Node.java	/^	    public boolean isIsolated() {$/;"	m	class:Node
+isValid	code_prof/Solution.java	/^	public boolean isValid() {$/;"	m	class:Solution
+jdg.graph	code_prof/jdg/graph/AdjacencyListGraph.java	/^package jdg.graph;$/;"	p
+jdg.graph	code_prof/jdg/graph/Edge.java	/^package jdg.graph;$/;"	p
+jdg.graph	code_prof/jdg/graph/GridLayout.java	/^package jdg.graph;$/;"	p
+jdg.graph	code_prof/jdg/graph/GridPoint.java	/^package jdg.graph;$/;"	p
+jdg.graph	code_prof/jdg/graph/Node.java	/^package jdg.graph;$/;"	p
+keyPressed	GraphViewer.java	/^	public void keyPressed() {$/;"	m	class:GraphViewer
+keyReleased	GraphViewer.java	/^	public void keyReleased() {$/;"	m	class:GraphViewer
+label	MyButton.java	/^  String label;$/;"	f	class:MyButton
+label	code_prof/jdg/graph/Node.java	/^	public String label;$/;"	f	class:Node
+layoutHeight	GraphViewer.java	/^	public int layoutWidth, layoutHeight;$/;"	f	class:GraphViewer
+layoutWidth	GraphViewer.java	/^	public int layoutWidth, layoutHeight;$/;"	f	class:GraphViewer
+lectureDansFichier	TC.java	/^  public static void lectureDansFichier(String nomFichier) {$/;"	m	class:TC
+lectureDansFichier	code_prof/TC.java	/^  public static void lectureDansFichier(String nomFichier) {$/;"	m	class:TC
+lectureEntreeStandard	TC.java	/^  public static void lectureEntreeStandard() {$/;"	m	class:TC
+lectureEntreeStandard	code_prof/TC.java	/^  public static void lectureEntreeStandard() {$/;"	m	class:TC
+lectureReader	TC.java	/^  public static void lectureReader(Reader input) {$/;"	m	class:TC
+lectureReader	code_prof/TC.java	/^  public static void lectureReader(Reader input) {$/;"	m	class:TC
+lengthWeight	DsaturOptimizerWithHeuristic.java	/^    double lengthWeight, centerWeight;$/;"	f	class:DsaturOptimizerWithHeuristic
+lignesDeChaine	TC.java	/^  static String[] lignesDeChaine(String input) {$/;"	m	class:TC
+lignesDeChaine	code_prof/TC.java	/^  static String[] lignesDeChaine(String input) {$/;"	m	class:TC
+lignesDeFichier	TC.java	/^  static String[] lignesDeFichier(String fileName) {$/;"	m	class:TC
+lignesDeFichier	code_prof/TC.java	/^  static String[] lignesDeFichier(String fileName) {$/;"	m	class:TC
+lignesDeScanner	TC.java	/^  private static String[] lignesDeScanner(Scanner scanner) {$/;"	m	class:TC	file:
+lignesDeScanner	code_prof/TC.java	/^  private static String[] lignesDeScanner(Scanner scanner) {$/;"	m	class:TC	file:
+lignesTableauDeChaine	TC.java	/^  static char[][] lignesTableauDeChaine(String input) {$/;"	m	class:TC
+lignesTableauDeChaine	code_prof/TC.java	/^  static char[][] lignesTableauDeChaine(String input) {$/;"	m	class:TC
+lignesTableauDeFichier	TC.java	/^  static char[][] lignesTableauDeFichier(String fileName) {$/;"	m	class:TC
+lignesTableauDeFichier	code_prof/TC.java	/^  static char[][] lignesTableauDeFichier(String fileName) {$/;"	m	class:TC
+lignesTableauDeScanner	TC.java	/^  private static char[][] lignesTableauDeScanner(Scanner scanner) {$/;"	m	class:TC	file:
+lignesTableauDeScanner	code_prof/TC.java	/^  private static char[][] lignesTableauDeScanner(Scanner scanner) {$/;"	m	class:TC	file:
+lireChar	TC.java	/^  public static char lireChar() {$/;"	m	class:TC
+lireChar	code_prof/TC.java	/^  public static char lireChar() {$/;"	m	class:TC
+lireDeChaine	TC.java	/^  static void lireDeChaine(char[] input) {$/;"	m	class:TC
+lireDeChaine	code_prof/TC.java	/^  static void lireDeChaine(char[] input) {$/;"	m	class:TC
+lireDeString	TC.java	/^  static void lireDeString(String input) {$/;"	m	class:TC
+lireDeString	code_prof/TC.java	/^  static void lireDeString(String input) {$/;"	m	class:TC
+lireDouble	TC.java	/^  public static double lireDouble() {$/;"	m	class:TC
+lireDouble	code_prof/TC.java	/^  public static double lireDouble() {$/;"	m	class:TC
+lireInt	TC.java	/^  public static int lireInt() {$/;"	m	class:TC
+lireInt	code_prof/TC.java	/^  public static int lireInt() {$/;"	m	class:TC
+lireLigne	TC.java	/^  public static String lireLigne() {$/;"	m	class:TC
+lireLigne	code_prof/TC.java	/^  public static String lireLigne() {$/;"	m	class:TC
+lireLigneTableauChar	TC.java	/^  static char[] lireLigneTableauChar() {$/;"	m	class:TC
+lireLigneTableauChar	code_prof/TC.java	/^  static char[] lireLigneTableauChar() {$/;"	m	class:TC
+lireLong	TC.java	/^  public static long lireLong() {$/;"	m	class:TC
+lireLong	code_prof/TC.java	/^  public static long lireLong() {$/;"	m	class:TC
+lireMot	TC.java	/^  public static String lireMot() {$/;"	m	class:TC
+lireMot	code_prof/TC.java	/^  public static String lireMot() {$/;"	m	class:TC
+lireMotSuivantTableauChar	TC.java	/^  static char[] lireMotSuivantTableauChar() {$/;"	m	class:TC
+lireMotSuivantTableauChar	code_prof/TC.java	/^  static char[] lireMotSuivantTableauChar() {$/;"	m	class:TC
+loadFile	IO.java	/^	private static JSONObject loadFile(String filename) {$/;"	m	class:IO	file:
+loadGraphFromInstance	code_prof/GraphIO.java	/^	public static GridLayout loadGraphFromInstance(Instance instance){$/;"	m	class:GraphIO
+loadInput	IO.java	/^	public static HashGraphWithInfo loadInput(String filename) {$/;"	m	class:IO
+longDeChaine	TC.java	/^  static long[] longDeChaine(String input) {$/;"	m	class:TC
+longDeChaine	code_prof/TC.java	/^  static long[] longDeChaine(String input) {$/;"	m	class:TC
+longDeFichier	TC.java	/^  static long[] longDeFichier(String fileName) {$/;"	m	class:TC
+longDeFichier	code_prof/TC.java	/^  static long[] longDeFichier(String fileName) {$/;"	m	class:TC
+longDeScanner	TC.java	/^  private static long[] longDeScanner(Scanner scanner) {$/;"	m	class:TC	file:
+longDeScanner	code_prof/TC.java	/^  private static long[] longDeScanner(Scanner scanner) {$/;"	m	class:TC	file:
+m	code_prof/Instance.java	/^    int m;$/;"	f	class:Instance
+main	GenerateAllOuputs.java	/^    public static void main(String[] args) {$/;"	m	class:GenerateAllOuputs
+main	GenerateAllOuputsWithResearch.java	/^    public static void main(String[] args) {$/;"	m	class:GenerateAllOuputsWithResearch
+main	GraphViewer.java	/^	public static void main(String[] args) {$/;"	m	class:GraphViewer
+main	TestMain.java	/^    public static void main(String[] args) {$/;"	m	class:TestMain
+main	code_prof/Optimize.java	/^	public static void main(String[] args) {$/;"	m	class:Optimize
+manhattanDistance	code_prof/jdg/graph/GridPoint.java	/^    public int manhattanDistance(GridPoint p) {$/;"	m	class:GridPoint
+manyColors	MarkovOptimizer.java	/^	int[] manyColors; \/\/Combien de fois est-elle utilisée ?$/;"	f	class:MarkovOptimizer
+maxColEdge	DsaturOptimizer.java	/^    EdgeForDsatur maxColEdge() {$/;"	m	class:DsaturOptimizer
+maxColEdge	DsaturOptimizerWithHeuristic.java	/^    EdgeForDsatur maxColEdge() {$/;"	m	class:DsaturOptimizerWithHeuristic
+maxScoreEdge	DsaturOptimizerWithHeuristic.java	/^    EdgeForDsatur maxScoreEdge() {$/;"	m	class:DsaturOptimizerWithHeuristic
+maxVertexIndex	code_prof/jdg/graph/AdjacencyListGraph.java	/^    public int maxVertexIndex() {$/;"	m	class:AdjacencyListGraph
+minVertexIndex	code_prof/jdg/graph/AdjacencyListGraph.java	/^    public int minVertexIndex() {$/;"	m	class:AdjacencyListGraph
+modify	GraphIntersection.java	/^	void modify(Edge chosen, int old_color, int new_color){$/;"	m	class:GraphIntersection
+motsDeChaine	TC.java	/^  public static String[] motsDeChaine(String chaine) {$/;"	m	class:TC
+motsDeChaine	code_prof/TC.java	/^  public static String[] motsDeChaine(String chaine) {$/;"	m	class:TC
+motsDeFichier	TC.java	/^  static String[] motsDeFichier(String fileName) {$/;"	m	class:TC
+motsDeFichier	code_prof/TC.java	/^  static String[] motsDeFichier(String fileName) {$/;"	m	class:TC
+motsDeScanner	TC.java	/^  private static String[] motsDeScanner(Scanner scanner) {$/;"	m	class:TC	file:
+motsDeScanner	code_prof/TC.java	/^  private static String[] motsDeScanner(Scanner scanner) {$/;"	m	class:TC	file:
+motsTableauDeChaine	TC.java	/^  static char[][] motsTableauDeChaine(String input) {$/;"	m	class:TC
+motsTableauDeChaine	code_prof/TC.java	/^  static char[][] motsTableauDeChaine(String input) {$/;"	m	class:TC
+motsTableauDeFichier	TC.java	/^  static char[][] motsTableauDeFichier(String fileName) {$/;"	m	class:TC
+motsTableauDeFichier	code_prof/TC.java	/^  static char[][] motsTableauDeFichier(String fileName) {$/;"	m	class:TC
+motsTableauDeScanner	TC.java	/^  private static char[][] motsTableauDeScanner(Scanner scanner) {$/;"	m	class:TC	file:
+motsTableauDeScanner	code_prof/TC.java	/^  private static char[][] motsTableauDeScanner(Scanner scanner) {$/;"	m	class:TC	file:
+mouseDragged	GraphViewer.java	/^	public void mouseDragged() {$/;"	m	class:GraphViewer
+mouseIsDragged	GraphViewer.java	/^	boolean mouseIsDragged = false;$/;"	f	class:GraphViewer
+mouseIsOver	MyButton.java	/^  public boolean mouseIsOver() {$/;"	m	class:MyButton
+mousePressed	GraphViewer.java	/^	public void mousePressed() {$/;"	m	class:GraphViewer
+mouseReleased	GraphViewer.java	/^	public void mouseReleased() {$/;"	m	class:GraphViewer
+n	code_prof/Instance.java	/^    int n;$/;"	f	class:Instance
+n	code_prof/jdg/graph/GridLayout.java	/^	public int n;$/;"	f	class:GridLayout
+nColors	MarkovOptimizer.java	/^	int nColors; \/\/Nombre de couleurs utilisées$/;"	f	class:MarkovOptimizer
+nEdges	DsaturOptimizer.java	/^    int nEdges;$/;"	f	class:DsaturOptimizer
+nEdges	DsaturOptimizerWithHeuristic.java	/^    int nEdges;$/;"	f	class:DsaturOptimizerWithHeuristic
+nEdges	GreedyOptimizer.java	/^    int nEdges;$/;"	f	class:GreedyOptimizer
+nEdges	SimpleOptimizer.java	/^    int nEdges;$/;"	f	class:SimpleOptimizer
+nano	TC.java	/^  private long nano = System.nanoTime();$/;"	f	class:TC	file:
+nano	code_prof/TC.java	/^  private long nano = System.nanoTime();$/;"	f	class:TC	file:
+nbColorNeighbours	EdgeForDsatur.java	/^    int nbColorNeighbours = 0;$/;"	f	class:EdgeForDsatur
+nbColors	GraphSolution.java	/^    int nbColors = 0;$/;"	f	class:GraphSolution
+nb_colo_voisins	GraphIntersection.java	/^	HashMap<Edge, int[]> nb_colo_voisins = new HashMap<Edge, int[]>();$/;"	f	class:GraphIntersection
+neighbors	code_prof/jdg/graph/Node.java	/^	public ArrayList<Node> neighbors=null;$/;"	f	class:Node
+neighborsList	code_prof/jdg/graph/Node.java	/^	    public List<Node> neighborsList() {$/;"	m	class:Node
+nodes	code_prof/jdg/graph/AdjacencyListGraph.java	/^	public ArrayList<Node> nodes;$/;"	f	class:AdjacencyListGraph
+numColors	code_prof/Solution.java	/^	public int numColors;$/;"	f	class:Solution
+oldMousePosition	GraphViewer.java	/^	int[] oldMousePosition; \/\/ mouse position on the screen (pixels)$/;"	f	class:GraphViewer
+orientation	Edge.java	/^    static private int orientation(Point p, Point q, Point r) {$/;"	m	class:Edge	file:
+outputPrefix	GenerateAllOuputs.java	/^    static String outputPrefix = "";$/;"	f	class:GenerateAllOuputs
+parent	MyButton.java	/^	PApplet parent;$/;"	f	class:MyButton
+passerBlancs	TC.java	/^  static void passerBlancs() {$/;"	m	class:TC
+passerBlancs	code_prof/TC.java	/^  static void passerBlancs() {$/;"	m	class:TC
+points	code_prof/jdg/graph/GridLayout.java	/^	public GridPoint[] points;$/;"	f	class:GridLayout
+potential	MarkovOptimizer.java	/^	double potential(GraphIntersection graph){$/;"	m	class:MarkovOptimizer
+potential	MarkovOptimizer.java	/^	double potential(GraphIntersection graph, Edge chosen, int new_color){$/;"	m	class:MarkovOptimizer
+prefix	GenerateAllOuputsWithResearch.java	/^    static String prefix = "";$/;"	f	class:GenerateAllOuputsWithResearch
+print	TC.java	/^  public static void print(Object o) {$/;"	m	class:TC
+print	TC.java	/^  public static void print(String chaine) {$/;"	m	class:TC
+print	TC.java	/^  public static void print(boolean b) {$/;"	m	class:TC
+print	TC.java	/^  public static void print(char c) {$/;"	m	class:TC
+print	TC.java	/^  public static void print(char[] t) {$/;"	m	class:TC
+print	TC.java	/^  public static void print(double d) {$/;"	m	class:TC
+print	TC.java	/^  public static void print(long l) {$/;"	m	class:TC
+print	TC.java	/^  static void print(int i) {$/;"	m	class:TC
+print	code_prof/Instance.java	/^    private void print(int[] t) {$/;"	m	class:Instance	file:
+print	code_prof/Instance.java	/^    public void print() {$/;"	m	class:Instance
+print	code_prof/TC.java	/^  public static void print(Object o) {$/;"	m	class:TC
+print	code_prof/TC.java	/^  public static void print(String chaine) {$/;"	m	class:TC
+print	code_prof/TC.java	/^  public static void print(boolean b) {$/;"	m	class:TC
+print	code_prof/TC.java	/^  public static void print(char c) {$/;"	m	class:TC
+print	code_prof/TC.java	/^  public static void print(char[] t) {$/;"	m	class:TC
+print	code_prof/TC.java	/^  public static void print(double d) {$/;"	m	class:TC
+print	code_prof/TC.java	/^  public static void print(long l) {$/;"	m	class:TC
+print	code_prof/TC.java	/^  static void print(int i) {$/;"	m	class:TC
+printCoordinates	code_prof/jdg/graph/GridLayout.java	/^    public void printCoordinates() {$/;"	m	class:GridLayout
+println	TC.java	/^  public static void println() {$/;"	m	class:TC
+println	TC.java	/^  public static void println(Object o) {$/;"	m	class:TC
+println	TC.java	/^  public static void println(String chaine) {$/;"	m	class:TC
+println	TC.java	/^  public static void println(boolean b) {$/;"	m	class:TC
+println	TC.java	/^  public static void println(char c) {$/;"	m	class:TC
+println	TC.java	/^  public static void println(char[] t) {$/;"	m	class:TC
+println	TC.java	/^  public static void println(double d) {$/;"	m	class:TC
+println	TC.java	/^  public static void println(long l) {$/;"	m	class:TC
+println	TC.java	/^  static void println(int i) {$/;"	m	class:TC
+println	code_prof/TC.java	/^  public static void println() {$/;"	m	class:TC
+println	code_prof/TC.java	/^  public static void println(Object o) {$/;"	m	class:TC
+println	code_prof/TC.java	/^  public static void println(String chaine) {$/;"	m	class:TC
+println	code_prof/TC.java	/^  public static void println(boolean b) {$/;"	m	class:TC
+println	code_prof/TC.java	/^  public static void println(char c) {$/;"	m	class:TC
+println	code_prof/TC.java	/^  public static void println(char[] t) {$/;"	m	class:TC
+println	code_prof/TC.java	/^  public static void println(double d) {$/;"	m	class:TC
+println	code_prof/TC.java	/^  public static void println(long l) {$/;"	m	class:TC
+println	code_prof/TC.java	/^  static void println(int i) {$/;"	m	class:TC
+readMonitor	TC.java	/^  private static final Object readMonitor = new Object();$/;"	f	class:TC	file:
+readMonitor	code_prof/TC.java	/^  private static final Object readMonitor = new Object();$/;"	f	class:TC	file:
+removeEdge	code_prof/jdg/graph/AdjacencyListGraph.java	/^    public void removeEdge(Node a, Node b){$/;"	m	class:AdjacencyListGraph
+removeNeighbor	code_prof/jdg/graph/Node.java	/^	    public void removeNeighbor(Node v) {$/;"	m	class:Node
+removeNode	code_prof/jdg/graph/AdjacencyListGraph.java	/^	public void removeNode(Node v) {$/;"	m	class:AdjacencyListGraph
+run	code_prof/MyBestAlgorithm.java	/^	public Solution run() {$/;"	m	class:MyBestAlgorithm
+saveSolutionToJSON	IO.java	/^	public static void saveSolutionToJSON(GraphSolution solution, String output) {$/;"	m	class:IO
+scaleFactor	GraphViewer.java	/^	public double scaleFactor = 1.;$/;"	f	class:GraphViewer
+scanner	TC.java	/^  private static Scanner scanner(Reader in) {$/;"	m	class:TC	file:
+scanner	code_prof/TC.java	/^  private static Scanner scanner(Reader in) {$/;"	m	class:TC	file:
+score	EdgeForDsatur.java	/^    double score = 0;$/;"	f	class:EdgeForDsatur
+score	EdgeWithInfo.java	/^    int score;$/;"	f	class:EdgeWithInfo
+second	code_prof/jdg/graph/Edge.java	/^	public Node first, second;$/;"	f	class:Edge
+serialVersionUID	TC.java	/^  private static final long serialVersionUID = 1L;$/;"	f	class:TCException	file:
+serialVersionUID	code_prof/TC.java	/^  private static final long serialVersionUID = 1L;$/;"	f	class:TCException	file:
+setCartesian	code_prof/jdg/graph/GridPoint.java	/^	public void setCartesian(int dim, int x) {$/;"	m	class:GridPoint
+setColor	code_prof/jdg/graph/Node.java	/^	    public void setColor(int r, int g, int b) {$/;"	m	class:Node
+setLabel	code_prof/jdg/graph/Node.java	/^	    public void setLabel(String label) {$/;"	m	class:Node
+setOrigin	code_prof/jdg/graph/GridPoint.java	/^	public void setOrigin() {$/;"	m	class:GridPoint
+setScanner	TC.java	/^  private static void setScanner(Scanner s) {$/;"	m	class:TC	file:
+setScanner	code_prof/TC.java	/^  private static void setScanner(Scanner s) {$/;"	m	class:TC	file:
+setTag	code_prof/jdg/graph/Node.java	/^	    public void setTag(int tag) { $/;"	m	class:Node
+setX	code_prof/jdg/graph/GridPoint.java	/^	public void setX(int x) {this.x=x; }$/;"	m	class:GridPoint
+setY	code_prof/jdg/graph/GridPoint.java	/^	public void setY(int y) {this.y=y; }$/;"	m	class:GridPoint
+settings	GraphViewer.java	/^	public void settings() {$/;"	m	class:GraphViewer
+setup	GraphViewer.java	/^	public void setup() {$/;"	m	class:GraphViewer
+shiftX	GraphViewer.java	/^	private int shiftX, shiftY; \/\/ (pixels) coordinates of the bottom left vertex of the bounding box$/;"	f	class:GraphViewer	file:
+shiftY	GraphViewer.java	/^	private int shiftX, shiftY; \/\/ (pixels) coordinates of the bottom left vertex of the bounding box$/;"	f	class:GraphViewer	file:
+show	HashGraph.java	/^	void show() {$/;"	m	class:HashGraph
+size	HashGraph.java	/^	int size = 0;$/;"	f	class:HashGraph
+sizeEdges	code_prof/jdg/graph/AdjacencyListGraph.java	/^    public int sizeEdges() {$/;"	m	class:AdjacencyListGraph
+sizeVertices	code_prof/jdg/graph/AdjacencyListGraph.java	/^    public int sizeVertices() {$/;"	m	class:AdjacencyListGraph
+sizeX	GraphViewer.java	/^	public static int sizeX; \/\/ horizontal size of the canvas$/;"	f	class:GraphViewer
+sizeY	GraphViewer.java	/^	public static int sizeY; \/\/ vertical size of the canvas (pixels)$/;"	f	class:GraphViewer
+solution	DsaturOptimizer.java	/^    GraphSolution solution;$/;"	f	class:DsaturOptimizer
+solution	DsaturOptimizerWithHeuristic.java	/^    GraphSolution solution;$/;"	f	class:DsaturOptimizerWithHeuristic
+solution	GraphViewer.java	/^	public static GraphSolution solution;$/;"	f	class:GraphViewer
+solution	GreedyOptimizer.java	/^    GraphSolution solution;$/;"	f	class:GreedyOptimizer
+solution	MarkovOptimizer.java	/^	GraphSolution solution;$/;"	f	class:MarkovOptimizer
+solution	SimpleOptimizer.java	/^    GraphSolution solution;$/;"	f	class:SimpleOptimizer
+solve	ColorOnePoint.java	/^    public void solve(GraphSolution wrongSolution) {$/;"	m	class:ColorOnePoint
+solve	DsaturOptimizer.java	/^    public void solve(GraphSolution wrongSolution) {$/;"	m	class:DsaturOptimizer
+solve	DsaturOptimizerWithHeuristic.java	/^    public void solve(GraphSolution wrongSolution) {$/;"	m	class:DsaturOptimizerWithHeuristic
+solve	GreedyOptimizer.java	/^    public void solve(GraphSolution wrongSolution) {$/;"	m	class:GreedyOptimizer
+solve	HashGraph.java	/^	int solve() {$/;"	m	class:HashGraph
+solve	MarkovOptimizer.java	/^	public void solve(GraphSolution wrongSolution){$/;"	m	class:MarkovOptimizer
+solve	Optimizer.java	/^    public abstract void solve(GraphSolution wrongSolution);$/;"	m	class:Optimizer
+solve	SimpleOptimizer.java	/^    public void solve(GraphSolution wrongSolution) {$/;"	m	class:SimpleOptimizer
+squareEuclideanDistance	code_prof/jdg/graph/GridPoint.java	/^	public int squareEuclideanDistance(GridPoint p) {$/;"	m	class:GridPoint
+startWithPrefix	GenerateAllOuputs.java	/^    static String startWithPrefix = "";$/;"	f	class:GenerateAllOuputs
+stringDeTableauChar	TC.java	/^  static String stringDeTableauChar(char[] chaine) {$/;"	m	class:TC
+stringDeTableauChar	code_prof/TC.java	/^  static String stringDeTableauChar(char[] chaine) {$/;"	m	class:TC
+tag	code_prof/jdg/graph/Node.java	/^	public int tag;$/;"	f	class:Node
+temperature	MarkovOptimizer.java	/^	double temperature(int i){$/;"	m	class:MarkovOptimizer
+tempsChrono	TC.java	/^  long tempsChrono() {$/;"	m	class:TC
+tempsChrono	code_prof/TC.java	/^  long tempsChrono() {$/;"	m	class:TC
+tempsNanoChrono	TC.java	/^  long tempsNanoChrono() {$/;"	m	class:TC
+tempsNanoChrono	code_prof/TC.java	/^  long tempsNanoChrono() {$/;"	m	class:TC
+time	TC.java	/^  private long time = System.currentTimeMillis();$/;"	f	class:TC	file:
+time	code_prof/TC.java	/^  private long time = System.currentTimeMillis();$/;"	f	class:TC	file:
+toString	Edge.java	/^    public String toString() {$/;"	m	class:Edge
+toString	HashGraph.java	/^	public String toString() {$/;"	m	class:HashGraph
+toString	Point.java	/^	public String toString() {$/;"	m	class:Point
+toString	code_prof/Instance.java	/^    public String toString() {$/;"	m	class:Instance
+toString	code_prof/Solution.java	/^	public String toString() {$/;"	m	class:Solution
+toString	code_prof/jdg/graph/GridLayout.java	/^    public String toString() {$/;"	m	class:GridLayout
+toString	code_prof/jdg/graph/GridPoint.java	/^	public String toString() {return "("+x+","+y+")"; }$/;"	m	class:GridPoint
+toString	code_prof/jdg/graph/Node.java	/^	    public String toString(){$/;"	m	class:Node
+translateOf	code_prof/jdg/graph/GridPoint.java	/^	public void translateOf(int dx, int dy) {$/;"	m	class:GridPoint
+update_vertices	HashGraph.java	/^	void update_vertices(Point a){$/;"	m	class:HashGraph
+useHeuristicToSort	DsaturOptimizerWithHeuristic.java	/^    boolean useHeuristicToStart, useHeuristicToSort;$/;"	f	class:DsaturOptimizerWithHeuristic
+useHeuristicToStart	DsaturOptimizerWithHeuristic.java	/^    boolean useHeuristicToStart, useHeuristicToSort;$/;"	f	class:DsaturOptimizerWithHeuristic
+usedColors	MarkovOptimizer.java	/^	HashSet<Integer> usedColors = new HashSet<Integer>(); \/\/La couleur est utilisée ?$/;"	f	class:MarkovOptimizer
+userOptionsAll	GraphViewer.java	/^	private static String userOptionsAll = ""$/;"	f	class:GraphViewer	file:
+vertices	GraphIntersection.java	/^	ArrayList<Edge> vertices = new ArrayList<Edge>();$/;"	f	class:GraphIntersection
+vertices	HashGraph.java	/^	ArrayList<Point> vertices = new ArrayList<Point>();$/;"	f	class:HashGraph
+voisins	GraphIntersection.java	/^	HashMap<Edge, ArrayList<Edge>> voisins = new HashMap<Edge, ArrayList<Edge>>();$/;"	f	class:GraphIntersection
+w	MyButton.java	/^  float w;    \/\/ width of button$/;"	f	class:MyButton
+weight	code_prof/jdg/graph/Node.java	/^	public double weight=1;$/;"	f	class:Node
+whiteColor	GraphViewer.java	/^	private int[] whiteColor = new int[] { 255, 255, 255 };$/;"	f	class:GraphViewer	file:
+writeMonitor	TC.java	/^  private static final Object writeMonitor = new Object();$/;"	f	class:TC	file:
+writeMonitor	code_prof/TC.java	/^  private static final Object writeMonitor = new Object();$/;"	f	class:TC	file:
+x	MyButton.java	/^  float x;    \/\/ top left corner x position$/;"	f	class:MyButton
+x	Point.java	/^	int x, y;$/;"	f	class:Point
+x	code_prof/Instance.java	/^    int[] x;$/;"	f	class:Instance
+x	code_prof/jdg/graph/GridPoint.java	/^	private int x, y;$/;"	f	class:GridPoint	file:
+xmax	GraphViewer.java	/^	public static int xmin = Integer.MAX_VALUE, xmax = Integer.MIN_VALUE, ymin = Integer.MAX_VALUE,$/;"	f	class:GraphViewer
+xmax	code_prof/Instance.java	/^    public int xmin=Integer.MAX_VALUE, xmax=Integer.MIN_VALUE, ymin=Integer.MAX_VALUE, ymax=Integer.MIN_VALUE;$/;"	f	class:Instance
+xmin	GraphViewer.java	/^	public static int xmin = Integer.MAX_VALUE, xmax = Integer.MIN_VALUE, ymin = Integer.MAX_VALUE,$/;"	f	class:GraphViewer
+xmin	code_prof/Instance.java	/^    public int xmin=Integer.MAX_VALUE, xmax=Integer.MIN_VALUE, ymin=Integer.MAX_VALUE, ymax=Integer.MIN_VALUE;$/;"	f	class:Instance
+y	MyButton.java	/^  float y;    \/\/ top left corner y position$/;"	f	class:MyButton
+y	Point.java	/^	int x, y;$/;"	f	class:Point
+y	code_prof/Instance.java	/^    int[] y;$/;"	f	class:Instance
+y	code_prof/jdg/graph/GridPoint.java	/^	private int x, y;$/;"	f	class:GridPoint	file:
+ymax	GraphViewer.java	/^			ymax = Integer.MIN_VALUE;$/;"	f	class:GraphViewer
+ymax	code_prof/Instance.java	/^    public int xmin=Integer.MAX_VALUE, xmax=Integer.MIN_VALUE, ymin=Integer.MAX_VALUE, ymax=Integer.MIN_VALUE;$/;"	f	class:Instance
+ymin	GraphViewer.java	/^	public static int xmin = Integer.MAX_VALUE, xmax = Integer.MIN_VALUE, ymin = Integer.MAX_VALUE,$/;"	f	class:GraphViewer
+ymin	code_prof/Instance.java	/^    public int xmin=Integer.MAX_VALUE, xmax=Integer.MIN_VALUE, ymin=Integer.MAX_VALUE, ymax=Integer.MIN_VALUE;$/;"	f	class:Instance
