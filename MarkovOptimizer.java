@@ -9,15 +9,14 @@ public class MarkovOptimizer extends Optimizer {
 	GraphIntersection graph;
 	GraphSolution solution;
 
-	int nColors; //Nombre de couleurs utilisées
-	HashSet<Integer> usedColors = new HashSet<Integer>(); //La couleur est utilisée ?
-	int[] manyColors; //Combien de fois est-elle utilisée ?
+	int nColors; // Nombre de couleurs utilisées
+	HashSet<Integer> usedColors = new HashSet<Integer>(); // La couleur est utilisée ?
+	int[] manyColors; // Combien de fois est-elle utilisée ?
 
 	static int N_iter = 50000;
 
-
-	public void solve(GraphSolution wrongSolution){
-		//doit partir d'une solution valide non nulle
+	public void solve(GraphSolution wrongSolution) {
+		// doit partir d'une solution valide non nulle
 		int nEdges = wrongSolution.graph.edges.size();
 
 		graph = new GraphIntersection(wrongSolution);
@@ -25,20 +24,20 @@ public class MarkovOptimizer extends Optimizer {
 		solution = wrongSolution;
 
 		/*
-		nColors = 0;
-		for(Edge e : graph.vertices){
-			usedColors.add(nColors);
-			solution.colorEdge(e, nColors++);
-		}
-
-		solution.nbColors = nColors;
-		*/
+		 * nColors = 0;
+		 * for(Edge e : graph.vertices){
+		 * usedColors.add(nColors);
+		 * solution.colorEdge(e, nColors++);
+		 * }
+		 * 
+		 * solution.nbColors = nColors;
+		 */
 
 		nColors = solution.nbColors;
 
 		manyColors = new int[nColors];
-		for(Edge e : graph.vertices){
-			for(int i = 0; i<nColors; i++)
+		for (Edge e : graph.vertices) {
+			for (int i = 0; i < nColors; i++)
 				manyColors[i] += graph.nb_colo_voisins.get(e)[i];
 		}
 
@@ -51,37 +50,36 @@ public class MarkovOptimizer extends Optimizer {
 		int c;
 		Edge chosen;
 
-		for(int i = 0; i<N_iter; i++){
+		for (int i = 0; i < N_iter; i++) {
 
-			if(i % 1000 == 0)
+			if (i % 1000 == 0)
 				System.out.println("i : " + i);
 
-			if(nColors <= 1 || usedColors.size() <= 1)
+			if (nColors <= 1 || usedColors.size() <= 1)
 				break;
-			//Choisir random edge
+			// Choisir random edge
 
-			do{
+			do {
 
 				chosen = graph.vertices.get(random.nextInt(nEdges));
 
-			}while(graph.colo_voisins.get(chosen).size() == nColors);
-				//Choisir au pif sa couleur ( on tire tant qu'il faut -> set couleurs voisins)
-				Set<Integer> set = new HashSet<Integer>();
-				set.addAll(usedColors);
+			} while (graph.colo_voisins.get(chosen).size() == nColors);
+			// Choisir au pif sa couleur ( on tire tant qu'il faut -> set couleurs voisins)
+			Set<Integer> set = new HashSet<Integer>();
+			set.addAll(usedColors);
 
-				do{
-					c = getRandomElement(set);
-					set.remove(c);
-				}while(graph.colo_voisins.get(chosen).contains(c));
+			do {
+				c = getRandomElement(set);
+				set.remove(c);
+			} while (graph.colo_voisins.get(chosen).contains(c));
 
-
-			//La changer (O(deg(edge)))
+			// La changer (O(deg(edge)))
 			double tentative = potential(graph, chosen, c);
 
-			if(random.nextDouble() < Math.exp((last_pot - tentative)/temperature(i))){
+			if (random.nextDouble() < Math.exp((last_pot - tentative) / temperature(i))) {
 
 				manyColors[attempting.color(chosen)]--;
-				if(manyColors[attempting.color(chosen)] == 0){
+				if (manyColors[attempting.color(chosen)] == 0) {
 					usedColors.remove(attempting.color(chosen));
 					nColors--;
 				}
@@ -91,7 +89,7 @@ public class MarkovOptimizer extends Optimizer {
 
 				attempting.colorEdge(chosen, c);
 
-				if(tentative < best_pot){
+				if (tentative < best_pot) {
 					solution = attempting;
 					best_pot = tentative;
 
@@ -106,20 +104,20 @@ public class MarkovOptimizer extends Optimizer {
 
 	}
 
-	double temperature(int i){
-		return 300 * Math.pow(i+1, -.03);
+	double temperature(int i) {
+		return 300 * Math.pow(i + 1, -.03);
 	}
 
-	double potential(GraphIntersection graph){
+	double potential(GraphIntersection graph) {
 		return nColors;
 	}
 
-	double potential(GraphIntersection graph, Edge chosen, int new_color){
+	double potential(GraphIntersection graph, Edge chosen, int new_color) {
 		return nColors;
 	}
 
-	//Trouvé sur internet
-	private static <E> E getRandomElement(Set<? extends E> set){
+	// Trouvé sur internet
+	private static <E> E getRandomElement(Set<? extends E> set) {
 		Random random = new Random();
 
 		// Generate a random number using nextInt
